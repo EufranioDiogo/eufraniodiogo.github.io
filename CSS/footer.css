@@ -1,0 +1,12 @@
+footer{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    background-color: #00000015;
+    margin-top: 100px;
+}
+footer h3{
+    color: #e4e4e4;
+    font-family: PoppinsSB, RobotL, Arial, Helvetica, sans-serif;
+    padding: 20px 0;
+}

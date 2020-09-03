@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+    font-family: RobotoL;
+    src: url('../FONTS/Roboto/Roboto-Light.ttf');
+}
+@font-face{
+    font-family: PoppinsL;
+    src: url('../FONTS/Poppins/Poppins-Light.ttf')
+}
+@font-face{
+    font-family: PoppinsEL;
+    src: url('../FONTS/Poppins/Poppins-ExtraLight.ttf')
+}
+@font-face{
+    font-family: PoppinsSB;
+    src: url('../FONTS/Poppins/Poppins-SemiBold.ttf')
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/universal.css">
+    <link rel="stylesheet" href="../CSS/menu.css">
+    <link rel="stylesheet" href="../CSS/myWorks.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <script src="https://kit.fontawesome.com/5c7edfd842.js" crossorigin="anonymous"></script>
+    <title>My Works $ Eufránio</title>
+</head>
+
+<body>
+
+    <header>
+        <nav id="nav-computer-menu">
+            <h1 id="secret-profile">eufránio</h1>
+            <ul id="computer-menu">
+                <a href="#">
+                    <li class="menu-itens">My Works</li>
+                    <span></span>
+                </a>
+                <a href="../index.html">
+                    <li class="menu-itens">Home</li>
+                    <span></span>
+                </a>
+                <a href="reminder.html">
+                    <li class="menu-itens">Reminder</li>
+                    <span></span>
+                </a>
+            </ul>
+
+            <ul id="social-media-contact">
+                <a href="https://github.com/EufranioDiogo" target="_blank">
+                    <li><i class="fab fa-github"></i></li>
+                </a>
+                <a href="https://www.facebook.com/EufranioDiogo10/" target="_blank">
+                    <li><i class="fab fa-facebook"></i></li>
+                </a>
+            </ul>
+
+            <button id="btn-menu-extra">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul id="mobile-menu">
+                <a href="#">
+                    <li class="menu-itens">My Works</li>
+                    <span></span>
+                </a>
+                <a href="../index.html">
+                    <li class="menu-itens">Home</li>
+                    <span></span>
+                </a>
+                <a href="reminder.html">
+                    <li class="menu-itens">Reminder</li>
+                    <span></span>
+                </a>
+            </ul>
+
+            <ul id="social-media-contact">
+                <a href="https://github.com/EufranioDiogo" target="_blank">
+                    <li><i class="fab fa-github"></i></li>
+                </a>
+                <a href="https://www.facebook.com/EufranioDiogo10/" target="_blank">
+                    <li><i class="fab fa-facebook"></i></li>
+                </a>
+            </ul>
+        </nav>
+        <div class="filter"></div>
+        <h1 id="home-page-title">As much we work we get better in our work</h1>
+    </header>
+
+    <h1 class="principal-title">Projects That I'm proud of!</h1>
+    <div id="main-conteiner">
+        <a v-for="project in projects" :href="project.link" target="_blank" class="link">
+            <div class="project">
+                <h1 class="project-name">{{project.name}}</h1>
+                <p class="objectives">{{project.objective}}</p>
+                <ul class="languages-class">
+                    <li v-for="language in project.languages">{{ language }}</li>
+                </ul>
+            </div>
+        </a>
+    </div>
+    <footer>
+        <h3>eufraniodiogo5@gmail.com</h3>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="../VUE/proudProjects.js"></script>
+    <script src="../JS/menu.js"></script>
+    <script src="../JS/mobileMenu.js"></script>
+</body>
+
+</html>

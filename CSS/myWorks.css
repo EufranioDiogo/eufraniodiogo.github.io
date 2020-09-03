@@ -1,0 +1,86 @@
+header {
+    background-image: url('../IMG/pexels-startup-stock-photos-7375.jpg');
+}
+
+@media only screen and (max-width: 1450px) {
+    #main-conteiner h1, .principal-title {
+        color: #dbdbdb;
+        font-family: PoppinsL, RobotoL, Arial, Helvetica, sans-serif;
+        font-size: 35px;
+        text-align: center;
+        margin-top: 50px;
+        text-transform: capitalize;
+    }
+    #main-conteiner {
+        width: 75%;
+        position: relative;
+        display: flex;
+        margin: 25px auto;
+        flex-wrap: wrap;
+    }
+    .link {
+        display: inline-block;
+        position: relative;
+        margin: 10px;
+        width: 30%;
+        text-decoration: none;
+    }
+    #main-conteiner .project {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        background-color: #313131;
+        box-shadow: 0 0 10px #00000015;
+        transition: 0.5s;
+    }
+    .link:hover .project {
+        margin-top: -10px;
+    }
+    #main-conteiner .project h1 {
+        position: relative;
+        display: block;
+        width: 100%;
+        color: #fff;
+        margin-bottom: 10px;
+        font-size: 25px;
+        text-align: left;
+        font-family: PoppinsSB, RobotoL, Arial, Helvetica, sans-serif;
+        padding: 10px;
+    }
+    #main-conteiner .project p {
+        position: relative;
+        display: block;
+        width: 100%;
+        color: #dbdbdb;
+        margin-bottom: 10px;
+        font-size: 15px;
+        font-family: PoppinsL, RobotoL, Arial, Helvetica, sans-serif;
+        padding: 10px;
+    }
+    #main-conteiner .project .languages-class {
+        list-style: none;
+        position: absolute;
+        bottom: 10px;
+    }
+    #main-conteiner .project .languages-class li {
+        position: relative;
+        display: inline-block;
+        margin: 0 5px;
+        padding: 5px;
+        border-radius: 20px;
+        color: #dbdbdb;
+        background-color: #ffffff27;
+        font-size: 12px;
+        font-family: PoppinsL, RobotoL, Arial, Helvetica, sans-serif;
+    }
+}
+@media only screen and (max-width: 514px){
+    #main-conteiner{
+        width: 95%;
+    }
+    #main-conteiner .link{
+        width: 100%;
+        overflow: visible;
+    }
+}

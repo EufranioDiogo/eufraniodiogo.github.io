@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/universal.css">
+    <link rel="stylesheet" href="CSS/menu.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <script src="https://kit.fontawesome.com/5c7edfd842.js" crossorigin="anonymous"></script>
+    <title>Home $ Eufránio</title>
+</head>
+<body>
+    <header>
+        <nav id="nav-computer-menu">
+            <h1 id="secret-profile">eufránio</h1>
+            <ul id="computer-menu">
+                <a href="HTML/my-works.html">
+                    <li class="menu-itens">My Works</li>
+                    <span></span>
+                </a>
+                <a href="#">
+                    <li class="menu-itens">Home</li>
+                    <span></span>
+                </a>
+                <a href="HTML/reminder.html">
+                    <li class="menu-itens">Reminder</li>
+                    <span></span>
+                </a>
+            </ul>
+
+            <button id="btn-menu-extra">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul id="mobile-menu">
+                <a href="HTML/my-works.html">
+                    <li class="menu-itens">My Works</li>
+                    <span></span>
+                </a>
+                <a href="#">
+                    <li class="menu-itens">Home</li>
+                    <span></span>
+                </a>
+                <a href="HTML/reminder.html">
+                    <li class="menu-itens">Reminder</li>
+                    <span></span>
+                </a>
+            </ul>
+
+            <ul id="social-media-contact">
+                <a href="https://github.com/EufranioDiogo" target="_blank">
+                    <li><i class="fab fa-github"></i></li>
+                </a>
+                <a href="https://www.facebook.com/EufranioDiogo10/" target="_blank">
+                    <li><i class="fab fa-facebook"></i></li>
+                </a>
+            </ul>
+        </nav>
+        <div class="filter"></div>
+        <h1 id="home-page-title">We can change the world</h1>
+    </header>
+
+    <div id="main-content">
+        <i class="fas fa-smile-wink smile-face"></i>
+        <h1>Hi!</h1>
+        <p>I'm Eufránio a <strong>front-end developer</strong> and also a computer science student.</p>
+
+        <h1>I work with</h1>
+        <ul class="i-work-with">
+            <li><i title="JavaScript" class="fab fa-js" style="color: #ffd900"></i></li>
+            <li><i title="HTML 5" class="fab fa-html5" style="color: #ff1e00"></i></li>
+            <li><i title="CSS 3" class="fab fa-css3-alt" style="color: #00e1ff"></i></li>
+            <li><i title="Vue 3" class="fab fa-vuejs" style="color: #00ff55"></i></li>
+        </ul>
+
+        <h2 class="normal-text">What I currenctily do?</h2>
+        <p class="normal-text">I'm studying new techs as: <strong style="color: #00f10c">nodejs</strong>, <strong style="color: #00cdf1">postgre</strong> and <strong style="color: #f19100">jquery</strong> to improve my skills as developer and problem solver.</p>
+        <p class="normal-text">Also have a Startup named <a href="https://eufraniodiogo.github.io/Meu-Web-Site" target="_blank">Uija Code</a> where I'm working and I share my knowleged in programming like <strong>python</strong> now.</p>
+
+        <h2 class="normal-text">What kind of experience I have as front-end developer?</h2>
+        <p class="normal-text">You can checkout some of works that I already done and make your own opinion.</p>
+        <ul class="works-that-already-done">
+            <a href="https://eufraniodiogo.github.io/cheesecake-recipe"><li>Cheesecake</li></a>
+            <a href="https://eufraniodiogo.github.io/my-team-page"><li>My Team Page</li></a>
+            <a href="https://eufraniodiogo.github.io/fone-landing-page"><li>Fone Landing Page</li></a>
+            <a href="https://eufraniodiogo.github.io/music-library"><li>Music library</li></a>
+            <a href="https://eufraniodiogo.github.io/pomodorogui"><li>Pomodoro</li></a>
+            <a href="https://eufraniodiogo.github.io/interior-design"><li>Interior Design</li></a>
+            <a href="https://eufraniodiogo.github.io/404-not-found-master"><li>404 not found</li></a>
+        </ul>
+    </div>
+    <button id="see-my-repos">
+        Want see my repos?
+    </button>
+    <div id="my-repos">
+        <ul>
+            <a v-for="repo in repos" :href="repo.url" target="_blank">
+                <li> {{ repo.name }}</li>
+            </a>
+        </ul>
+    </div>
+    <footer>
+        <h3>eufraniodiogo5@gmail.com</h3>
+    </footer>
+    <!--{{ repo.icon }}-->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="index.js"></script>
+    <script src="JS/menu.js"></script>
+    <script src="JS/mobileMenu.js"></script>
+</body>
+</html>

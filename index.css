@@ -1,0 +1,147 @@
+@media only screen and (max-width: 1450px) {
+    #main-content {
+        width: 50%;
+        position: relative;
+        margin: 50px auto;
+        text-align: center;
+    }
+    #main-content>h1 {
+        color: #e9e9e9;
+        font-size: 30px;
+        font-family: PoppinsSB, Arial, Helvetica, sans-serif;
+        margin: 15px 0;
+        text-transform: capitalize;
+    }
+    #main-content>h2 {
+        color: #d3d3d3;
+        font-size: 25px;
+        font-family: PoppinsL, Arial, Helvetica, sans-serif;
+        margin: 25px 0 10px 0;
+    }
+    #main-content>p {
+        color: #c2c2c2;
+        font-size: 20px;
+        font-family: PoppinsL, Arial, Helvetica, sans-serif;
+    }
+    .normal-text {
+        text-align: left;
+    }
+    strong {
+        color: #fff;
+        font-weight: 700;
+    }
+    a {
+        color: aqua;
+    }
+    .smile-face {
+        font-size: 120px;
+        color: #ffae00;
+        display: block;
+        position: relative;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .i-work-with {
+        display: inline-block;
+        position: relative;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        list-style: none;
+    }
+    .i-work-with li {
+        display: inline-block;
+        margin: 0 10px;
+        font-size: 30px;
+    }
+    .works-that-already-done {
+        background-color: #0000003f;
+        border-radius: 5px;
+        margin: 20px 0;
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        justify-content: center;
+    }
+    .works-that-already-done a {
+        position: relative;
+        margin: 10px;
+        text-decoration: none;
+    }
+    .works-that-already-done a li {
+        color: #c2c2c2;
+        font-size: 20px;
+        font-family: PoppinsSB, Arial, Helvetica, sans-serif;
+        transition-property: color;
+        transition-duration: 0.5s;
+        text-transform: capitalize;
+    }
+    .works-that-already-done a:hover li {
+        color: #ff4800;
+    }
+    #see-my-repos{
+        border: none;
+        display: block;
+        position: relative;
+        margin: 10px auto;
+        text-align: center;
+        background-color: #0000002f;
+        color: #d3d3d3;
+        font-size: 25px;
+        font-family: PoppinsSB, Arial, Helvetica, sans-serif;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.5s;
+        margin-bottom: 0;
+    }
+    #see-my-repos:hover{
+        background-color: #0000007a;
+    }
+    #my-repos{
+        display: none;
+        position: relative;
+        flex-wrap: wrap;
+        width: 50%;
+        margin: 50px auto;
+    }
+    #my-repos ul {
+        list-style: none;
+        width: 100%;
+    }
+    #my-repos a{
+        text-decoration: none;
+    }
+    #my-repos ul li{
+        padding: 10px 0;
+        padding-left: 10px;
+        font-size: 25px;
+        font-family: PoppinsL, Arial, Helvetica, sans-serif;
+        color: #c2c2c2;
+        background-color: #c2c2c244;
+        border-radius: 5px;
+        margin: 15px 0;
+        transition: 0.5s;
+    }
+    #my-repos ul li:hover{
+        background-color: #3b3b3b44;
+    }
+    .directions{
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+@media only screen and (max-width: 514px) {
+    #main-content {
+        width: 95%;
+    }
+    .smile-face {
+        margin-bottom: 25px;
+    }
+    #my-repos{
+        width: 95%;
+    }
+}
