@@ -33,6 +33,7 @@ header {
         background-color: #313131;
         box-shadow: 0 0 10px #00000015;
         transition: 0.5s;
+        padding: 5px;
     }
     .link:hover .project {
         margin-top: -10px;
@@ -46,21 +47,20 @@ header {
         font-size: 25px;
         text-align: left;
         font-family: PoppinsSB, RobotoL, Arial, Helvetica, sans-serif;
-        padding: 10px;
+        margin-top: 0;
     }
     #main-conteiner .project p {
         position: relative;
         display: block;
         width: 100%;
         color: #dbdbdb;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         font-size: 15px;
         font-family: PoppinsL, RobotoL, Arial, Helvetica, sans-serif;
-        padding: 10px;
     }
     #main-conteiner .project .languages-class {
         list-style: none;
-        position: absolute;
+        position: relative;
         bottom: 10px;
     }
     #main-conteiner .project .languages-class li {
@@ -82,5 +82,8 @@ header {
     #main-conteiner .link{
         width: 100%;
         overflow: visible;
+    }
+    .link:hover .project {
+        margin-top: 0px;
     }
 }
