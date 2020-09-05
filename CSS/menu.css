@@ -104,6 +104,11 @@ body {
         font-size: 25px;
         top: 50%;
         transform: translateY(-50%);
+        border-radius: 50%;
+        transition: 0.5s
+    }
+    #social-media-contact li i:hover {
+        box-shadow: 0 0 4px #1f1f1fbe;
     }
     #secret-profile {
         text-decoration: none;
