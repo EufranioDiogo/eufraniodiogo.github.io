@@ -132,6 +132,33 @@
         top: 50%;
         transform: translateY(-50%);
     }
+    .div-repos-quantity{
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        width: auto;
+        margin-top: 55px;
+        right: 5%;
+    }
+    .div-repos-quantity .label-info-repo{
+        display: block;
+        position: relative;
+        width: 100%;
+        text-align: center;
+        padding: 5px 0;
+        color: #9b9b9b;
+        font-size: 20px;
+        font-family: PoppinsSB, Arial, Helvetica, sans-serif;
+    }
+    .div-repos-quantity p{
+        display: block;
+        position: relative;
+        width: 100%;
+        text-align: center;
+        color: #bdbdbd;
+        font-size: 35px;
+        font-family: PoppinsL, Arial, Helvetica, sans-serif;
+    }
 }
 
 @media only screen and (max-width: 514px) {

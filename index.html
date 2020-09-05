@@ -92,6 +92,10 @@
     <button id="see-my-repos">
         Want see my repos?
     </button>
+    <div class="div-repos-quantity" style="display: none;">
+        <label class="label-info-repo">Repo Quantity</label>
+        <p id="repo-number">10</p>
+    </div>
     <div id="my-repos">
         <ul>
             <a v-for="repo in repos" :href="repo.url" target="_blank">
