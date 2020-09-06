@@ -171,4 +171,7 @@
     #my-repos{
         width: 95%;
     }
+    header{
+        background-position-x: -545px;
+    }
 }
