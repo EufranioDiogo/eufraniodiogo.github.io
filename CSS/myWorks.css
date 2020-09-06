@@ -1,5 +1,6 @@
 header {
     background-image: url('../IMG/pexels-startup-stock-photos-7375.jpg');
+    background-attachment: scroll;
 }
 
 @media only screen and (max-width: 1450px) {
