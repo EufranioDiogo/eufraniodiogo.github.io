@@ -137,7 +137,7 @@
         flex-wrap: wrap;
         position: absolute;
         width: auto;
-        margin-top: 55px;
+        margin-top: 5px;
         right: 5%;
     }
     .div-repos-quantity .label-info-repo{
@@ -155,9 +155,10 @@
         position: relative;
         width: 100%;
         text-align: center;
-        color: #bdbdbd;
+        color: #ffffff;
         font-size: 35px;
         font-family: PoppinsL, Arial, Helvetica, sans-serif;
+        font-weight: 900;
     }
 }
 
@@ -170,5 +171,22 @@
     }
     #my-repos{
         width: 95%;
+    }
+    .div-repos-quantity{
+        flex-wrap: nowrap;
+        margin-top: -45px;
+        left: 5%;
+        right: auto;
+        width: 100%;
+    }
+    .div-repos-quantity .label-info-repo{
+        width: 50%;
+        line-height: 40px;
+        text-align: right;
+    }
+    .div-repos-quantity p{
+        width: 30%;
+        text-align: left;
+        padding-left: 20px;
     }
 }

@@ -19,7 +19,7 @@ btnSeeMyRepos.addEventListener('click', () => {
 
                 limitRepo = data.length;
                 velocity = limitRepo > 100 ? 0.05 : 50;
-     
+
                 let app = new Vue({
                     el: '#my-repos',
                     data: {
@@ -37,10 +37,15 @@ btnSeeMyRepos.addEventListener('click', () => {
                         paragrafo.innerText = repoNumber;
                     }
                 }
-                let intervalID = setInterval(animationReposNumber, velocity)
+                let intervalID = setInterval(animationReposNumber, velocity);
+                document.querySelector('#see-my-repos').style.display = 'none';
             })
-            .catch((error) => alert('Cant\'t catch EufranioDiogo repositories'));
-
+            .catch((error) => {
+                alert('Sorry, We can\'t access the repos, please click at the link bellow to access');
+                document.querySelector('#my-repos > ul > a').setAttribute('href', 'https://github.com/EufranioDiogo?tab=repositories');
+                document.querySelector('#my-repos > ul > a > li').innerText = 'let\'s go to the repos';
+            });
+        document.querySelector('#see-my-repos').style.display = 'none';
         flagSeeMyRepos = true;
     }
 })
