@@ -14,7 +14,9 @@ btnSeeMyRepos.addEventListener('click', () => {
             .then(data => {
                 for (let i = 0; i < data.length; i++) {
                     repo = data[i];
-                    data[i] = { 'name': repo.name.replaceAll('-', ' ').replaceAll('_', ' ').toLowerCase(), 'url': repo.html_url }
+                    name = repo.name.replaceAll('-', ' ').replaceAll('_', ' ').toLowerCase();
+                    url = repo.html_url;
+                    data[i] = { 'name': name, 'url':  html_url }
                 }
 
                 limitRepo = data.length;
