@@ -12,6 +12,9 @@ btnSeeMyRepos.addEventListener('click', () => {
         fetch('https://api.github.com/users/EufranioDiogo/repos')
             .then(res => res.json())
             .then(data => {
+                let name;
+                let url;
+
                 for (let i = 0; i < data.length; i++) {
                     repo = data[i];
                     name = repo.name.replaceAll('-', ' ').replaceAll('_', ' ').toLowerCase();
