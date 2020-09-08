@@ -23,6 +23,31 @@
         font-size: 20px;
         font-family: PoppinsL, Arial, Helvetica, sans-serif;
     }
+    #main-content #user-description{
+        position: relative;
+        display: flex;
+        margin-bottom: 25px;
+    }
+    #main-content #user-description img{
+        border-radius: 10px;
+        width: 150px;
+        position: relative;
+        border: 2px solid #fff;
+        margin-right: 15px;
+    }
+    #main-content #user-description .user-info{
+        font-family: PoppinsL, Arial, Helvetica, sans-serif;
+        color: #bdbdbd;
+    }
+    .user-info p{
+        margin: 2.5px 0;
+    }
+    .user-info p i {
+        margin-right: 5px;
+        display: inline-block;
+        width: 20px;
+        text-align: center;
+    }
     .normal-text {
         text-align: left;
     }

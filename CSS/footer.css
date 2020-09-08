@@ -10,3 +10,10 @@ footer h3{
     font-family: PoppinsSB, RobotL, Arial, Helvetica, sans-serif;
     padding: 20px 0;
 }
+/*
+footer #social-media-contact{
+    background-color: transparent;
+}
+footer #social-media-contact a li i{
+    color: #f5f5f5 !important;
+}*/
