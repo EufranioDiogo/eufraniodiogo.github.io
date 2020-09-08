@@ -1,6 +1,16 @@
 let btnSeeMyRepos = document.getElementById('see-my-repos')
 let flagSeeMyRepos = false;
 
+function toTitle(name){
+    name = name.split(' ');
+
+    for(let i = 0; i < name.length; i++){
+        name[i] = name[i][0].toUpperCase() + name[i].substring(1,);
+    }
+    name = name.join(' ');
+    return name;
+}
+
 btnSeeMyRepos.addEventListener('click', () => {
     if (flagSeeMyRepos == false) {
         document.getElementById('my-repos').style.display = 'flex';
@@ -18,8 +28,11 @@ btnSeeMyRepos.addEventListener('click', () => {
                 for (let i = 0; i < data.length; i++) {
                     repo = data[i];
                     name = repo.name.replaceAll('-', ' ').replaceAll('_', ' ').toLowerCase();
+
+                    name = toTitle(name);
                     url = repo.html_url;
-                    data[i] = { 'name': name, 'url':  html_url }
+
+                    data[i] = { 'name': name, 'url': url }
                 }
 
                 limitRepo = data.length;
@@ -46,9 +59,10 @@ btnSeeMyRepos.addEventListener('click', () => {
                 document.querySelector('#see-my-repos').style.display = 'none';
             })
             .catch((error) => {
-                alert('Sorry, We can\'t access the repos, please click at the link bellow to access');
-                document.querySelector('#my-repos > ul > a').setAttribute('href', 'https://github.com/EufranioDiogo?tab=repositories');
                 document.querySelector('#my-repos > ul > a > li').innerText = 'let\'s go to the repos';
+                alert('Sorry, We can\'t access Eufranio\'s repos, click at the link bellow to access');
+                document.querySelector('#my-repos > ul > a').setAttribute('href', 'https://github.com/EufranioDiogo?tab=repositories');
+                
             });
         document.querySelector('#see-my-repos').style.display = 'none';
         flagSeeMyRepos = true;
