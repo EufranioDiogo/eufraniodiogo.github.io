@@ -3,7 +3,7 @@ header {
     background-attachment: scroll;
 }
 
-@media only screen and (max-width: 1450px) {
+@media only screen and (max-width: 1750px) {
     /*I was working at the white theme*/
     #main-conteiner h1, .principal-title {
         color: var(--principal-title);

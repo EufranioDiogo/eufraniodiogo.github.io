@@ -44,7 +44,7 @@ let app = new Vue({
             },
             {
                 name: 'Fone Landing Page',
-                link: 'https://github.com/EufranioDiogo/comandos-git',
+                link: 'https://eufraniodiogo.github.io/Fone-Landing-Page',
                 desc: 'A todo app app that I did using data structures.',
                 img: '../IMG/FoneProject.png'
             },
