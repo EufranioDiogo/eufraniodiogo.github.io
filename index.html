@@ -3,10 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+
     <link rel="stylesheet" href="CSS/universal.css">
     <link rel="stylesheet" href="CSS/menu.css">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="CSS/footer.css">
+
+    <link class="page-theme" rel="stylesheet" href="CSS/menu-dark-theme.css">
+    <link class="page-theme" rel="stylesheet" href="CSS/index-dark-theme.css">
+    <link class="page-theme" rel="stylesheet" href="CSS/footer-dark-theme.css">
     <script src="https://kit.fontawesome.com/5c7edfd842.js" crossorigin="anonymous"></script>
     <title>Home $ Eufránio</title>
 </head>
@@ -68,6 +75,11 @@
                 <p><i class="fas fa-laptop"></i><strong>Area:</strong> Front-end Development</p>
                 <p><i class="fas fa-briefcase"></i><strong>Occupation:</strong> Computer Science Student</p>
                 <p><i class="fas fa-globe-africa"></i><strong>Nationality:</strong> Angolan</p>
+                <div class="div-theme-conteiner">
+                    <p>Select your favorite color theme:</p>
+                    <button id="btn-dark-theme" :class="{active: theme == 'dark'}" v-on:click="darkTheme"></button>
+                    <button id="btn-white-theme" :class="{active: theme == 'light'}" v-on:click="lightTheme"></button>
+                </div>
             </div>
         </div>
 
@@ -81,10 +93,11 @@
         </ul>
 
         <h2 class="normal-text">What I currenctily do?</h2>
-        <p class="normal-text">I'm studying new techs as: <strong style="color: #00f10c">nodejs</strong>, <strong style="color: #00f1b5">vue.js</strong> and <strong style="color: #ffd900">JavaScript</strong> to improve my skills as developer and problem solver.</p>
+        <p class="normal-text">I'm studying <strong style="color: #00f1b5">vue.js</strong>, <strong style="color: #ecc900">JavaScript</strong> Intermidate and Advanced level and Web Design.</p>
+        <p>I'm also doing challenges from <a href="https://devchallenges.io" target="_blank">DevChallenges.io</a> and <a href="http://https://www.devchallenge.com.br" target="_blank">DevChallenges BR</a> and cliente projects</p>
 
-        <h2 class="normal-text">What kind of experience I have as front-end developer?</h2>
-        <p class="normal-text">You can checkout some of works that I already done and make your own opinion.</p>
+        <h2 class="normal-text">Here are some websites that I did</h2>
+        <p class="normal-text">Better than speak is show, for more about them access <a href="HTML/my-works.html">My Works</a>.</p>
         <ul class="works-that-already-done">
             <a target="_blank" href="https://eufraniodiogo.github.io/cheesecake-recipe"><li>Cheesecake</li></a>
             <a target="_blank" href="https://eufraniodiogo.github.io/my-team-page"><li>My Team Page</li></a>
@@ -97,6 +110,13 @@
             <a target="_blank" href="https://eufraniodiogo.github.io/Checkout-Form"><li>Checkout Form</li></a>
             <a target="_blank" href="https://eufraniodiogo.github.io/My-Gallery-App"><li>My Gallery</li></a>
         </ul>
+
+        <h2 class="normal-text">What can I build?</h2>
+        <p>I can build fully a Front-end side of a websites with all the tools that I work with.</p>
+
+        <h2 class="normal-text">More about myself</h2>
+        <p>I'm Eufránio, I'm a young body trying to live the most exiciting life that I can, I'm not looking the sense of the life because I already know and the answer is with God, I love to learn languages I currenctily know: Portuguese(Native), English and basics of French.</p>
+        <p>Sometimes I need say the truth and it can hurt, but I do.</p>
     </div>
     <button id="see-my-repos">
         Get access to all my repos
@@ -116,7 +136,7 @@
         <h3>eufraniodiogo5@gmail.com</h3>
     </footer>
     <!--{{ repo.icon }}-->
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    
     <script src="index.js"></script>
     <script src="JS/menu.js"></script>
     <script src="JS/mobileMenu.js"></script>

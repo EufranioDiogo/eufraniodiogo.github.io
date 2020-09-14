@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #1f1f1f;
+    background-color: var(--body);
 }
 
 @media only screen and (max-width: 1450px) {
@@ -18,11 +18,11 @@ body {
     }
     #nav-computer-menu {
         width: 100%;
-        background-color: #1f1f1f;
+        background-color: var(--body);
         /*#1f1f1ffa*/
         z-index: 100;
         position: fixed;
-        border-bottom: 0.5px solid #131313;
+        border-bottom: 0.5px solid var(--menu-nav-bar-border);
     }
     #computer-menu {
         display: flex;
@@ -41,7 +41,7 @@ body {
     #computer-menu a li {
         position: relative;
         display: inline-block;
-        color: #fcfcfc;
+        color: var(--menu-nav-bar-options);
         padding: 20px;
         font-family: PoppinsL, RobotoL, Arial, Helvetica, sans-serif;
     }
@@ -51,7 +51,7 @@ body {
         left: 50%;
         transform: translateX(-50%);
         height: 3px;
-        background-color: #fcfcfc;
+        background-color: var(--menu-nav-bar-options);
         width: 0%;
         border-radius: 10px;
     }
@@ -87,7 +87,7 @@ body {
         right: 0;
         width: 7%;
         height: 60%;
-        background-color: #f5f5f5;
+        background-color: var(--social-media-background);
         list-style: none;
         transform: translateY(-50%);
         border-radius: 5px 0 0 5px;
@@ -103,7 +103,7 @@ body {
     #social-media-contact li i {
         display: block;
         position: relative;
-        color: #1f1f1f;
+        color: var(--social-media-icons);
         font-size: 25px;
         top: 50%;
         transform: translateY(-50%);
@@ -111,7 +111,7 @@ body {
         transition: 0.5s
     }
     #social-media-contact li i:hover {
-        box-shadow: 0 0 4px #1f1f1fbe;
+        box-shadow: 0 0 4px var(--social-media-icons-hover);
     }
     #secret-profile {
         text-decoration: none;
@@ -124,8 +124,8 @@ body {
         transform: translateY(-50%);
         padding: 0 10px;
         text-align: center;
-        color: #1f1f1f;
-        background: #f5f5f5;
+        color: var(--eufranio-title-color);
+        background: var(--eufranio-title-background);
         cursor: pointer;
         border-radius: 0 5px 5px 0;
     }
@@ -183,7 +183,7 @@ body {
         display: block;
         border: none;
         background-color: transparent;
-        color: #ebebeb;
+        color: var(--menu-nav-bar-options);
         font-size: 20px;
         width: 10%;
         height: 100%;

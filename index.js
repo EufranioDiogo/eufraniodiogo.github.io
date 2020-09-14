@@ -1,10 +1,29 @@
 let btnSeeMyRepos = document.getElementById('see-my-repos')
 let flagSeeMyRepos = false;
+let actualTheme = window.localStorage.getItem('theme')
 
-function toTitle(name){
+if (actualTheme == null) {
+    actualTheme = 'dark'
+
+    let components = document.querySelectorAll('.page-theme');
+
+    components[0].setAttribute('href', 'CSS/menu-dark-theme.css')
+    components[1].setAttribute('href', 'CSS/index-dark-theme.css')
+    components[2].setAttribute('href', 'CSS/footer-dark-theme.css')
+} else {
+    if(actualTheme == 'light'){
+        let components = document.querySelectorAll('.page-theme');
+
+        components[0].setAttribute('href', 'CSS/menu-white-theme.css')
+        components[1].setAttribute('href', 'CSS/index-white-theme.css')
+        components[2].setAttribute('href', 'CSS/footer-white-theme.css')
+    }
+}
+
+function toTitle(name) {
     name = name.split(' ');
 
-    for(let i = 0; i < name.length; i++){
+    for (let i = 0; i < name.length; i++) {
         name[i] = name[i][0].toUpperCase() + name[i].substring(1,);
     }
     name = name.join(' ');
@@ -62,9 +81,38 @@ btnSeeMyRepos.addEventListener('click', () => {
                 document.querySelector('#my-repos > ul > a > li').innerText = 'let\'s go to the repos';
                 alert('Sorry, We can\'t access Eufranio\'s repos, click at the link bellow to access');
                 document.querySelector('#my-repos > ul > a').setAttribute('href', 'https://github.com/EufranioDiogo?tab=repositories');
-                
+
             });
         document.querySelector('#see-my-repos').style.display = 'none';
         flagSeeMyRepos = true;
     }
+})
+
+
+let app = new Vue({
+    el: '#main-content',
+    data: {
+        theme: actualTheme
+    },
+    methods: {
+        lightTheme() {
+            let components = document.querySelectorAll('.page-theme');
+
+            components[0].setAttribute('href', 'CSS/menu-white-theme.css')
+            components[1].setAttribute('href', 'CSS/index-white-theme.css')
+            components[2].setAttribute('href', 'CSS/footer-white-theme.css')
+            this.theme = 'light'
+            window.localStorage.setItem('theme', 'light')
+        },
+        darkTheme() {
+            let components = document.querySelectorAll('.page-theme');
+
+            components[0].setAttribute('href', 'CSS/menu-dark-theme.css')
+            components[1].setAttribute('href', 'CSS/index-dark-theme.css')
+            components[2].setAttribute('href', 'CSS/footer-dark-theme.css')
+            this.theme = 'dark'
+            window.localStorage.setItem('theme', 'dark')
+
+        }
+    },
 })

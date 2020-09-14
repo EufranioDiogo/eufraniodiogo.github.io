@@ -15,13 +15,13 @@ tag {
         text-align: center;
     }
     #main-content>p {
-        color: #c2c2c2;
+        color: var(--main-content-text-color);
         font-size: 20px;
         font-family: PoppinsL, Arial, Helvetica, sans-serif;
         margin: 25px 0;
     }
     #author {
-        color: #fff;
+        color: var(--main-content-author);
         text-align: center;
         font-family: PoppinsSB, Arial, Helvetica, sans-serif;
         font-size: 25px;

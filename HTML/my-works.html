@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="../CSS/menu.css">
     <link rel="stylesheet" href="../CSS/myWorks.css">
     <link rel="stylesheet" href="../CSS/footer.css">
+
+    <link class="page-theme" rel="stylesheet" href="../CSS/menu-dark-theme.css">
+    <link class="page-theme" rel="stylesheet" href="../CSS/myWorks-dark-theme.css">
+    <link class="page-theme" rel="stylesheet" href="../CSS/footer-dark-theme.css">
+
     <script src="https://kit.fontawesome.com/5c7edfd842.js" crossorigin="anonymous"></script>
     <title>My Works $ Eufránio</title>
 </head>
@@ -74,13 +79,13 @@
 
     <h1 class="principal-title">Projects That I'm proud of!</h1>
     <div id="main-conteiner">
-        <a v-for="project in projects" :href="project.link" target="_blank" class="link">
-            <div class="project">
-                <h1 class="project-name">{{project.name}}</h1>
-                <p class="objectives">{{project.objective}}</p>
-                <ul class="languages-class">
-                    <li v-for="language in project.languages">{{ language }}</li>
-                </ul>
+        <a v-for="project in projects" class="project-link" :href="project.link">
+            <div class="project-info">
+                <img class="project-img" :src="project.img" :alt="project.name">
+                <div class="project-desc-conteiner">
+                    <h2 class="project-name"> {{ project.name }} </h2>
+                    <p class="project-desc"> {{ project.desc }} </p>
+                </div>
             </div>
         </a>
     </div>
@@ -91,6 +96,27 @@
     <script src="../VUE/proudProjects.js"></script>
     <script src="../JS/menu.js"></script>
     <script src="../JS/mobileMenu.js"></script>
+    <script>
+        let actualTheme = window.localStorage.getItem('theme')
+
+        if (actualTheme == null) {
+            actualTheme = 'dark'
+
+            let components = document.querySelectorAll('.page-theme');
+
+            components[0].setAttribute('href', '../CSS/menu-dark-theme.css')
+            components[1].setAttribute('href', '../CSS/myWorks-dark-theme.css')
+            components[2].setAttribute('href', '../CSS/footer-dark-theme.css')
+        } else {
+            let components = document.querySelectorAll('.page-theme');
+
+            if (actualTheme == 'light') {
+                components[0].setAttribute('href', '../CSS/menu-white-theme.css')
+                components[1].setAttribute('href', '../CSS/myWorks-white-theme.css')
+                components[2].setAttribute('href', '../CSS/footer-white-theme.css')
+            }
+        }
+    </script>
 </body>
 
 </html>

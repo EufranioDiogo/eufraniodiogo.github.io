@@ -1,0 +1,18 @@
+:root{
+    --main-content-h1: #000000;
+    --main-content-h2: #1a1a1a;
+    --main-content-p: #0e0e0e;
+    --profile-image-border-color: #242424;
+    --strong: #f5f5f5;
+    --link: #2b2b2b;
+    --works-already-done: #d1d1d1d3;
+    --works-already-done-color:#fafafa;
+    --see-my-repos-background: #2d2d2d84;
+    --see-my-repos-color: #ffffff;
+    --see-my-repos-hover: #000000a4;
+    --my-repos-background:  #2d2d2d;
+    --my-repos-color: #161616;
+    --my-repos-hover: #3b3b3b44;
+    --label-info-repo: #282828;
+    --repos-quantity: #000000;
+}

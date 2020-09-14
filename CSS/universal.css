@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+body * {
+    transition: 0.3s;
+}
 @font-face{
     font-family: RobotoL;
     src: url('../FONTS/Roboto/Roboto-Light.ttf');
