@@ -20,7 +20,7 @@ let app = new Vue({
             },
             {
                 name: 'Weather App',
-                link: 'https://eufraniodiogo.github.io/Weather',
+                link: 'https://eufraniodiogo.github.io/Weather-App',
                 desc: 'I did this game for fun and I really like it, try to play and I think that you will like.',
                 img: '../IMG/WeatherAppProject.jpg'
             },
