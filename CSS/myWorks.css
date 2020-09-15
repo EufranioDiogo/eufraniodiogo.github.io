@@ -62,7 +62,15 @@ header {
         color: var(--project-desc);
     }
 }
-@media only screen and (max-width: 514px){
+@media only screen and (max-width: 750px){
+    #main-conteiner{
+        width: 95%;
+    }
+    #main-conteiner .project-link{
+        width: 45%;
+    }
+}
+@media only screen and (max-width: 545px){
     #main-conteiner{
         width: 95%;
     }

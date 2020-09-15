@@ -131,7 +131,7 @@ body {
     }
 }
 
-@media only screen and (max-width: 514px) {
+@media only screen and (max-width: 750px) {
     header{
         height: 65vh;
     }

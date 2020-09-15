@@ -28,9 +28,9 @@ tag {
     }
 }
 
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 750px) {
     header{
-        background-position-x: -415px;
+        background-position-x: 0px;
     }
     header #home-page-title{
         font-size: 35px;

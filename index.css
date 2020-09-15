@@ -95,6 +95,11 @@
         margin: 0 10px;
         font-size: 30px;
     }
+    .sr-only{
+        color: var(--main-content-h2);
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 20px;
+    }
     .works-that-already-done {
         background-color: var(--works-already-done);
         border-radius: 5px;
@@ -203,12 +208,9 @@
     }
 }
 
-@media only screen and (max-width: 514px) {
+@media only screen and (max-width: 755px) {
     #main-content {
         width: 95%;
-    }
-    .smile-face {
-        margin-bottom: 25px;
     }
     #my-repos{
         width: 95%;
@@ -231,14 +233,18 @@
         padding-left: 20px;
     }
     header{
-        background-position-x: -545px;
+        background-position-x: 0px;
+        background-size: 100% 100%;
     }
     #main-content #user-description{
         flex-wrap: wrap;
+        justify-content: center;
     }
     #main-content #user-description img{
-        left: 50%;
-        transform: translateX(-50%);
         margin-bottom: 40px;
+    }
+    #main-content #user-description .user-info{
+        width: 100%;
+        text-align: center;
     }
 }
