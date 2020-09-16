@@ -59,6 +59,12 @@ let app = new Vue({
                 link: 'https://eufraniodiogo.github.io/Pomodoro',
                 desc: 'A todo app app that I did using data structures.',
                 img: '../IMG/PomodoroProject.png'
+            },
+            {
+                name: 'Countries Quiz',
+                link: 'https://eufraniodiogo.github.io/Countries-Quiz',
+                desc: 'A web app that put you updated about geography of the world knowing every countries...',
+                img: '../IMG/Countries-Quiz.png'
             }
         ]
     }
