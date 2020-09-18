@@ -65,6 +65,12 @@ let app = new Vue({
                 link: 'https://eufraniodiogo.github.io/Countries-Quiz',
                 desc: 'A web app that put you updated about geography of the world knowing every countries...',
                 img: '../IMG/Countries-Quiz.png'
+            },
+            {
+                name: 'Github Jobs',
+                link: 'https://eufraniodiogo.github.io/Github-Jobs',
+                desc: 'Do you want to know the jobs opportunities around you? If yes this the best solution',
+                img: '../IMG/Github-Jobs.png'
             }
         ]
     }
