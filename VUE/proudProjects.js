@@ -31,6 +31,24 @@ let app = new Vue({
                 img: '../IMG/pexels-christina-morillo-1181263.jpg'
             },
             {
+                name: 'Countries Quiz',
+                link: 'https://eufraniodiogo.github.io/Countries-Quiz',
+                desc: 'A web app that put you updated about geography of the world knowing every countries...',
+                img: '../IMG/Countries-Quiz.png'
+            },
+            {
+                name: 'Github Jobs',
+                link: 'https://eufraniodiogo.github.io/Github-Jobs',
+                desc: 'Do you want to know the jobs opportunities around you? If yes this the best solution',
+                img: '../IMG/Github-Jobs.png'
+            },
+            {
+                name: 'Awesome Quotes',
+                link: 'https://eufraniodiogo.github.io/AwesomeQuotes',
+                desc: 'Do you like quotes? Take a look at the best website to get all the your quotes.',
+                img: '../IMG/AwesomeQuotes.png'
+            },
+            {
                 name: 'Comandos de git',
                 link: 'https://github.com/EufranioDiogo/comandos-git',
                 desc: 'Repository created by Taba and I liked so much and I decided to contribuite and I loved because I also use git and it will help me and others hope so.',
@@ -60,18 +78,6 @@ let app = new Vue({
                 desc: 'A todo app app that I did using data structures.',
                 img: '../IMG/PomodoroProject.png'
             },
-            {
-                name: 'Countries Quiz',
-                link: 'https://eufraniodiogo.github.io/Countries-Quiz',
-                desc: 'A web app that put you updated about geography of the world knowing every countries...',
-                img: '../IMG/Countries-Quiz.png'
-            },
-            {
-                name: 'Github Jobs',
-                link: 'https://eufraniodiogo.github.io/Github-Jobs',
-                desc: 'Do you want to know the jobs opportunities around you? If yes this the best solution',
-                img: '../IMG/Github-Jobs.png'
-            }
         ]
     }
 })
