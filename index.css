@@ -84,16 +84,70 @@
         color: var(--link);
     }
     .i-work-with {
-        display: inline-block;
+        display: flex;
         position: relative;
         margin-top: 10px;
         margin-bottom: 10px;
         list-style: none;
+        flex-direction: column;
     }
     .i-work-with li {
-        display: inline-block;
-        margin: 0 10px;
+        display: flex;
+        margin: 5px 0px;
         font-size: 30px;
+    }
+    .i-work-with li i {
+        display: block;
+        width: 5%;
+    }
+
+    .i-work-with li .level-conteiner{
+        display: block;
+        width: 50%;
+        border-radius: 5px;
+        background-color: var(--level-conteiner);
+        margin-left: 10px;
+        position: relative;
+        box-shadow: 0.2rem 0.1rem 0.2rem #0000000e;
+        transition: 0.5s;
+    }
+    .i-work-with li .level-conteiner:hover{
+        width: 60%;
+        transform: scale(1.05);
+        box-shadow: 0.2rem 0.1rem 0.2rem #00000019;
+    }
+    .i-work-with li .level-conteiner .level-bar{
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        height: 100%;
+        border-radius: 5px;
+        background-color: #161616;
+        align-items: center;
+        width: 70%;
+    }
+    .i-work-with li .level-conteiner .level-bar .percentage{
+        font-size: 18px;
+        font-weight: 700;
+        color: #161616;
+        font-family: PoppinsSB, sans-serif;
+        margin-right: 5px;
+        cursor: default;
+    }
+    #js-level{
+        background-color: #ffd000 !important;
+    }
+    #html5-level{
+        background-color: #ff4800 !important;
+    }
+    #css3-level{
+        background-color: #00f2ff !important;
+    }
+    #vuejs-level{
+        background: linear-gradient(to right, #00ff77, #00b3ff);
+    }
+    #vuejs-level p{
+        color: #fff;
     }
     .sr-only{
         color: var(--main-content-h2);
@@ -246,5 +300,13 @@
     #main-content #user-description .user-info{
         width: 100%;
         text-align: center;
+    }
+    .i-work-with li .level-conteiner{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .i-work-with li .level-conteiner:hover{
+        transform: none;
+        width: auto;
     }
 }

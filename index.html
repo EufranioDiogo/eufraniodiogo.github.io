@@ -85,11 +85,38 @@
 
         <h1 class="normal-text">I work with:</h1>
         <ul class="i-work-with">
-            <li><i title="JavaScript" class="fab fa-js" style="color: #ffd900"></i></li>
-            <li><i title="HTML 5" class="fab fa-html5" style="color: #ff1e00"></i></li>
-            <li><i title="CSS 3" class="fab fa-css3-alt" style="color: #00e1ff"></i></li>
-            <li><i title="Vue 3" class="fab fa-vuejs" style="color: #00ff88"></i></li>
-            <li><i title="Python" class="fab fa-python" style="color: #00b5fc"></i></li>
+            <li>
+                <i title="JavaScript" class="fab fa-js" style="color: #ffd900"></i>
+                <div class="level-conteiner">
+                    <div id="js-level" class="level-bar" :style="{width: levels.jsLevel + '%'}">
+                        <p class="percentage">{{ levels.jsLevel }}%</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <i title="HTML 5" class="fab fa-html5" style="color: #ff1e00"></i>
+                <div class="level-conteiner">
+                    <div id="html5-level" class="level-bar" :style="{width: levels.html5Level + '%'}">
+                        <p class="percentage">{{ levels.html5Level }}%</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <i title="CSS 3" class="fab fa-css3-alt" style="color: #00e1ff"></i>
+                <div class="level-conteiner">
+                    <div id="css3-level" class="level-bar" :style="{width: levels.css3Level + '%'}">
+                        <p class="percentage">{{ levels.css3Level }}%</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <i title="Vue 3" class="fab fa-vuejs" style="color: #00ff88"></i>
+                <div class="level-conteiner">
+                    <div id="vuejs-level" class="level-bar" :style="{width: levels.vuejsLevel + '%'}">
+                        <p class="percentage">{{ levels.vuejsLevel }}%</p>
+                    </div>
+                </div>
+            </li>
         </ul>
 
         <h2 class="normal-text">What I currenctily do?</h2>

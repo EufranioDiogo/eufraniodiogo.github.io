@@ -92,7 +92,8 @@ btnSeeMyRepos.addEventListener('click', () => {
 let app = new Vue({
     el: '#main-content',
     data: {
-        theme: actualTheme
+        theme: actualTheme,
+        levels: {jsLevel: 65, html5Level: 80, vuejsLevel: 50, css3Level: 75}
     },
     methods: {
         lightTheme() {
