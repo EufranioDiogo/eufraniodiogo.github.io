@@ -48,12 +48,11 @@ body {
     #computer-menu a>span {
         position: absolute;
         bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        height: 3px;
+        left: 0;
+        height: 4px;
         background-color: var(--menu-nav-bar-options);
         width: 0%;
-        border-radius: 10px;
+        border-radius: 20px 20px 0 0;
     }
     #mobile-menu{
         display: none;
