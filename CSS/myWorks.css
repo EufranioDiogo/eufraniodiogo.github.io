@@ -27,8 +27,11 @@ header {
         text-decoration: none;
         margin: 10px;
     }
-    .project-info:hover .project-img{
-        scale: 1.02;
+    .project-info:hover{
+        transform: translateY(-25px);
+    }
+    .project-info:hover img{
+        transform: scale(1.07);
     }
     .project-info{
         width: 100%;
