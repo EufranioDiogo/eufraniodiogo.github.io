@@ -61,6 +61,12 @@ let app = new Vue({
                 img: '../IMG/toDoApp.png'
             },
             {
+                name: 'Edie HomePage',
+                link: 'https://eufraniodiogo.github.io/Edie-Homepage',
+                desc: 'Beautiful and Amazing website design!',
+                img: '../IMG/EdieHomePage.png'
+            },
+            {
                 name: 'Fone Landing Page',
                 link: 'https://eufraniodiogo.github.io/Fone-Landing-Page',
                 desc: 'A todo app app that I did using data structures.',
