@@ -93,7 +93,7 @@ let app = new Vue({
     el: '#main-content',
     data: {
         theme: actualTheme,
-        levels: {jsLevel: 65, html5Level: 80, vuejsLevel: 50, css3Level: 75}
+        levels: {jsLevel: 66, html5Level: 81, vuejsLevel: 55, css3Level: 77}
     },
     methods: {
         lightTheme() {

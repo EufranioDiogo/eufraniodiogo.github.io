@@ -77,20 +77,52 @@
         <h1 id="home-page-title">As much we work we get better in our work</h1>
     </header>
 
-    <h1 class="principal-title">Projects That I'm proud of!</h1>
+    <div class="control-conteiner">
+        <div class="filter-control-panel">
+            <h2 class="filter-title">Filter:</h2>
+            <select name="projectType" id="project-type" class="project-type-selector">
+                <option value="all">All</option>
+                <option value="front-end">Front-end</option>
+                <option value="back-end">Back-end</option>
+                <option value="full-stack">Full-Stack</option>
+                <option value="contribution">Contribution</option>
+                <option value="script">Scripts</option>
+            </select>
+        </div>
+    </div>
+
     <div id="main-conteiner">
-        <a v-for="project in projects" class="project-link" :href="project.link">
+        <a v-for="project in projects"
+            v-if="actualProjectTypeFilter == 'all' || actualProjectTypeFilter == project.type" class="project-link"
+            :href="project.link">
             <div class="project-info">
                 <img class="project-img" :src="project.img" :alt="project.name">
                 <div class="project-desc-conteiner">
                     <h2 class="project-name"> {{ project.name }} </h2>
                     <p class="project-desc"> {{ project.desc }} </p>
                 </div>
+                <p class="project-type"> {{ project.type }}</p>
             </div>
         </a>
     </div>
     <footer>
-        <h3>eufraniodiogo5@gmail.com</h3>
+        <div class="footer-social-medias">
+            <a href="htpps://www.github.com/EufranioDiogo" target="_blank" id="github" class="footer-social-media-link">
+                <i class="fab fa-github icon"></i>
+            </a>
+            <a href="https://www.facebook.com/EufranioDiogo10/" target="_blank" id="facebook"
+                class="footer-social-media-link">
+                <i class="fab fa-facebook icon"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/eufranio-diogo-a33145122/" target="_blank" id="linkedin"
+                class="footer-social-media-link">
+                <i class="fab fa-linkedin icon"></i>
+            </a>
+        </div>
+
+        <div class="contact-me">
+            <a href="mailto:eufraniodiogo146@gmail.com" class="email">eufraniodiogo146@gmail.com</a>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script src="../VUE/proudProjects.js"></script>
