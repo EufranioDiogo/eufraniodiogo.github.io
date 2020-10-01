@@ -112,8 +112,6 @@
         transition: 0.5s;
     }
     .i-work-with li .level-conteiner:hover{
-        width: 60%;
-        transform: scale(1.05);
         box-shadow: 0.2rem 0.1rem 0.2rem #00000019;
     }
     .i-work-with li .level-conteiner .level-bar{
@@ -146,8 +144,17 @@
     #vuejs-level{
         background: linear-gradient(to right, #00ff77, #00b3ff);
     }
+    #nodejs-level{
+        background: #00a914;
+    }
     #vuejs-level p{
         color: #fff;
+    }
+    .tech-denomination{
+        font-family: PoppinsSB, sans-serif;
+        font-size: 1.6rem;
+        color: var(--main-content-h2);;
+        margin-left: 1rem;
     }
     .sr-only{
         color: var(--main-content-h2);
