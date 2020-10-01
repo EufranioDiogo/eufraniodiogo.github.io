@@ -7,7 +7,7 @@ body {
     background-color: var(--body);
 }
 
-@media only screen and (max-width: 1750px) {
+@media only screen and (max-width: 5000px) {
     header {
         position: relative;
         width: 100%;
@@ -46,14 +46,15 @@ body {
         font-family: PoppinsL, RobotoL, Arial, Helvetica, sans-serif;
         font-size: 1.6rem;
     }
-    #computer-menu a>span {
+    #computer-menu a span {
         position: absolute;
         bottom: 0;
-        left: 0;
+        left: 50%;
+        transform: translateX(-50%);
         height: 4px;
         background-color: var(--menu-nav-bar-options);
+        border-radius: 20px;
         width: 0%;
-        border-radius: 20px 20px 0 0;
     }
     #mobile-menu{
         display: none;
