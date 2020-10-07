@@ -29,6 +29,13 @@ let app = new Vue({
                 type: 'full-stack'
             },
             {
+                name: 'Catwiki',
+                link: 'https://ancient-bayou-07455.herokuapp.com/',
+                desc: 'Cat lovers will love it :)',
+                img: '../IMG/Catwiki.png',
+                type: 'full-stack'
+            },
+            {
                 name: 'Rock Paper Scissor',
                 link: 'https://eufraniodiogo.github.io/Rock-Paper-Scissor',
                 desc: 'I did this game for fun and I really like it, try to play and I think that you will like.',
