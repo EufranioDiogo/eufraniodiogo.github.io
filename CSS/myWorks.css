@@ -3,125 +3,139 @@ header {
     background-attachment: scroll;
 }
 
-@media only screen and (max-width: 1750px) {
-    /*I was working at the white theme*/
-    .control-conteiner {
-        position: relative;
-        margin: 2.5rem 0 5rem 0;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        width: 100%;
-    }
-    .filter-control-panel{
-        display: flex;
-        align-items: center;
-        margin-right: 10%;
-        background-color: rgba(0, 0, 0, 0.077);
-        border-radius: 0.5rem;
-        padding: 1rem;
-    }
-    .filter-title{
-        font-family: PoppinsSB, sans-serif;
-        color: var(--project-desc);
-        margin-right: 2%;
-    }
-    .project-type-selector{
-        border: none;
-        padding: 1rem;
-        color: var(--project-name);
-        border-radius: 0.5rem;
-    }
-    #main-conteiner h1, .principal-title {
-        color: var(--principal-title);
-        font-family: PoppinsL, RobotoL, Arial, Helvetica, sans-serif;
-        font-size: 3.5rem;
-        text-align: center;
-        margin-top: 3.5rem;
-        text-transform: capitalize;
-    }
-    #main-conteiner {
-        width: 90%;
-        position: relative;
-        display: flex;
-        margin: 2.5rem auto;
-        flex-wrap: wrap;
-    }
-    .project-link {
-        width: 30%;
-        height: 35.5rem;
-        display: block;
-        text-decoration: none;
-        margin: 1.0rem;
-        transition: 0.5s;
-    }
-    
-    .project-info:hover {
-        transform: translateY(-2.5rem);
-    }
-    .project-info:hover img {
-        transform: scale(1.07);
-    }
-    .project-info {
-        width: 100%;
-        border-radius: 0.5rem;
-        position: relative;
-        display: flex;
-        flex-wrap: wrap;
-        overflow: hidden;
-        transition: 0.5s;
-        overflow: hidden;
-    }
-    .project-img {
-        display: block;
-        width: 100%;
-        height: 25rem;
-        border-radius: 0.5rem;
-        object-fit: cover;
-        position: relative;
-    }
-    .project-info:hover::after{
-        content: "See More";
-        position: absolute;
-        width: 100%;
-        height: 26rem;
-        border-radius: 0.5rem 0.5rem 0 0;
-        line-height: 25rem;
-        font-size: 2rem;
-        text-align: center;
-        color: #fff;
-        background-color: #00000096;
-        font-family: PoppinsSB, sans-serif;
-        transition: 1s;
-    }
-    .project-desc-conteiner {
-        display: block;
-        position: relative;
-        height: 30%;
-        width: 100%;
-    }
-    .project-desc-conteiner .project-name {
-        color: var(--project-name);
-        font-family: PoppinsSB;
-        margin: 1.0rem 0;
-    }
-    .project-desc-conteiner .project-desc {
-        font-family: PoppinsL;
-        color: var(--project-desc);
-    }
-    .project-type{
-        position: absolute;
-        text-align: center;
-        background-color: rgba(255, 255, 255, 0.717);
-        border-radius: 2rem;
-        padding: 1rem 2rem;
-        color: #2e2e2e;
-        font-family: PoppinsSB, sans-serif;
-        border: 0.1rem solid  #2e2e2e;
-        font-size: 1.2rem;
-        top: 2%;
-        right: 2%;
-    }
+/*I was working at the white theme*/
+
+.control-conteiner {
+    position: relative;
+    margin: 2.5rem 0 5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.filter-control-panel {
+    display: flex;
+    align-items: center;
+    margin-right: 10%;
+    background-color: rgba(0, 0, 0, 0.077);
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.filter-title {
+    font-family: PoppinsSB, sans-serif;
+    color: var(--project-desc);
+    margin-right: 2%;
+}
+
+.project-type-selector {
+    border: none;
+    padding: 1rem;
+    color: #333;
+    border-radius: 0.5rem;
+}
+
+#main-conteiner h1, .principal-title {
+    color: var(--principal-title);
+    font-family: PoppinsL, RobotoL, Arial, Helvetica, sans-serif;
+    font-size: 3.5rem;
+    text-align: center;
+    margin-top: 3.5rem;
+    text-transform: capitalize;
+}
+
+#main-conteiner {
+    width: 90%;
+    position: relative;
+    display: flex;
+    margin: 2.5rem auto;
+    flex-wrap: wrap;
+}
+
+.project-link {
+    width: 30%;
+    height: 35.5rem;
+    display: block;
+    text-decoration: none;
+    margin: 1.0rem;
+    transition: 0.5s;
+}
+
+.project-info:hover {
+    transform: translateY(-2.5rem);
+}
+
+.project-info:hover img {
+    transform: scale(1.07);
+}
+
+.project-info {
+    width: 100%;
+    border-radius: 0.5rem;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.project-img {
+    display: block;
+    width: 100%;
+    height: 25rem;
+    border-radius: 0.5rem;
+    object-fit: cover;
+    position: relative;
+}
+
+.project-info:hover::after {
+    content: "See More";
+    position: absolute;
+    width: 100%;
+    height: 26rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+    line-height: 25rem;
+    font-size: 2rem;
+    text-align: center;
+    color: #fff;
+    background-color: #00000096;
+    font-family: PoppinsSB, sans-serif;
+    transition: 1s;
+}
+
+.project-desc-conteiner {
+    display: block;
+    position: relative;
+    height: 30%;
+    width: 100%;
+}
+
+.project-desc-conteiner .project-name {
+    color: var(--project-name);
+    font-family: PoppinsSB;
+    margin: 1.0rem 0;
+}
+
+.project-desc-conteiner .project-desc {
+    font-family: PoppinsL;
+    color: var(--project-desc);
+    font-size: 1.4rem;
+}
+
+.project-type {
+    position: absolute;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.717);
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    color: #2e2e2e;
+    font-family: PoppinsSB, sans-serif;
+    border: 0.1rem solid #2e2e2e;
+    font-size: 1.2rem;
+    top: 2%;
+    right: 2%;
 }
 
 @media only screen and (max-width: 750px) {
@@ -131,7 +145,7 @@ header {
     #main-conteiner .project-link {
         width: 45%;
     }
-    .filter-control-panel{
+    .filter-control-panel {
         margin-right: 4%;
     }
 }

@@ -7,32 +7,32 @@ tag {
     color: #0099ff;
 }
 
-@media only screen and (max-width: 1750px) {
-    #main-content {
-        width: 50%;
-        position: relative;
-        margin: 50px auto;
-        text-align: center;
-    }
-    #main-content>p {
-        color: var(--main-content-text-color);
-        font-size: 20px;
-        font-family: PoppinsL, Arial, Helvetica, sans-serif;
-        margin: 25px 0;
-    }
-    #author {
-        color: var(--main-content-author);
-        text-align: center;
-        font-family: PoppinsSB, Arial, Helvetica, sans-serif;
-        font-size: 25px;
-    }
+#main-content {
+    width: 50%;
+    position: relative;
+    margin: 50px auto;
+    text-align: center;
+}
+
+#main-content>p {
+    color: var(--main-content-text-color);
+    font-size: 20px;
+    font-family: PoppinsL, Arial, Helvetica, sans-serif;
+    margin: 25px 0;
+}
+
+#author {
+    color: var(--main-content-author);
+    text-align: center;
+    font-family: PoppinsSB, Arial, Helvetica, sans-serif;
+    font-size: 25px;
 }
 
 @media only screen and (max-width: 750px) {
-    header{
+    header {
         background-position-x: 0px;
     }
-    header #home-page-title{
+    header #home-page-title {
         font-size: 35px;
     }
     #main-content {
