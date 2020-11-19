@@ -8,6 +8,13 @@ let app = new Vue({
     data: {
         projects: [
             {
+                name: '30 Dias de CSS',
+                link: 'https://eufraniodiogo.github.io/30diasDeCSS',
+                desc: '30 days challenging my CSS skills',
+                img: '../IMG/30DiasCSS.png',
+                type: 'front-end'
+            },
+            {
                 name: 'Weather App',
                 link: 'https://eufraniodiogo.github.io/Weather-App',
                 desc: 'I did this game for fun and I really like it, try to play and I think that you will like.',
