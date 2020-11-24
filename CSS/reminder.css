@@ -1,6 +1,9 @@
 header {
-    background-image: url('../IMG/pexels-helena-lopes-697244.jpg');
-    background-attachment: scroll;
+    top: 0;
+    height: auto;
+}
+#nav-computer-menu {
+    top: 0;
 }
 
 tag {
@@ -8,26 +11,270 @@ tag {
 }
 
 #main-content {
-    width: 50%;
+    width: 89%;
     position: relative;
-    margin: 50px auto;
-    text-align: center;
+    margin: 10rem 0;
+    margin-left: 5%;
 }
 
-#main-content>p {
-    color: var(--main-content-text-color);
-    font-size: 20px;
-    font-family: PoppinsL, Arial, Helvetica, sans-serif;
-    margin: 25px 0;
-}
-
-#author {
-    color: var(--main-content-author);
-    text-align: center;
+#main-content h1 {
+    color: var(--main-content-h1);
+    font-size: 32px;
     font-family: PoppinsSB, Arial, Helvetica, sans-serif;
-    font-size: 25px;
+    margin: 15px 0;
+    text-transform: capitalize;
 }
 
+#main-content h2 {
+    color: var(--main-content-h2);
+    font-size: 26px;
+    font-family: PoppinsL, Arial, Helvetica, sans-serif;
+    margin: 25px 0 10px 0;
+}
+
+#main-content p {
+    color: var(--main-content-p);
+    font-size: 16px;
+    font-family: PoppinsL, Arial, Helvetica, sans-serif;
+}
+
+
+#main-content .user-short-description {
+    position: relative;
+    display: flex;
+    background: url("../IMG/pexels-markus-spiske-360591.jpg");
+}
+
+#main-content .user-short-description img {
+    width: 25%;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+#main-content .user-short-description .user-description {
+    position: absolute;
+    width: 40%;
+    padding: 2rem;
+    border-left: 0.4rem solid #0a97e3;
+    top: 50%;
+    left: 20%;
+    background-color: #fff;
+}
+
+.div-theme-conteiner {
+    position: relative;
+    margin-top: 10px;
+}
+
+.div-theme-conteiner button {
+    border: 2px solid #848484;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: #fff;
+}
+
+.div-theme-conteiner button:hover {
+    border: 0.4rem solid #E29E21;
+}
+
+.active {
+    border: 2px solid #00b3ff !important;
+}
+
+#btn-dark-theme {
+    background-color: #1a1a1a;
+}
+
+.user-info p {
+    margin: 2.5px 0;
+}
+
+.user-info p i {
+    margin-right: 5px;
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+}
+
+.user-info p strong {
+    color: var(--main-content-h2);
+}
+
+.normal-text {
+    text-align: left;
+}
+
+strong {
+    color: var(--strong);
+    font-weight: 700;
+}
+
+a {
+    color: var(--link);
+}
+
+.i-work-with {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.i-work-with li {
+    display: flex;
+    margin: 1rem 1rem 1rem 0;
+    font-size: 30px;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background: #3c4856;
+    justify-content: center;
+    align-items: center;
+}
+
+.i-work-with li i {
+    display: block;
+    width: 5%;
+}
+
+.tech-denomination {
+    font-family: PoppinsSB, sans-serif;
+    font-size: 1.6rem;
+    color: #ffffff !important;
+    margin-left: 2.5rem;
+}
+
+.sr-only {
+    color: var(--main-content-h2);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+/* 
+.works-that-already-done {
+    background-color: var(--works-already-done);
+    border-radius: 5px;
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+}
+
+.works-that-already-done a {
+    position: relative;
+    margin: 10px;
+    font-family: PoppinsLL, Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.works-that-already-one a li {
+    color: var(--works-already-done-color);
+    font-size: 20px;
+    transition-property: color;
+    transition-duration: 0.5s;
+    text-transform: capitalize;
+}
+
+.works-that-already-done a:hover li {
+    color: #ff4800;
+}
+
+#see-my-repos {
+    border: none;
+    display: block;
+    position: relative;
+    margin: 10px auto;
+    text-align: center;
+    background-color: var(--see-my-repos-background);
+    color: var(--see-my-repos-color);
+    font-size: 25px;
+    font-family: PoppinsSB, Arial, Helvetica, sans-serif;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-bottom: 0;
+}
+
+#see-my-repos:hover {
+    background-color: var(--see-my-repos-hover);
+}
+
+#my-repos {
+    display: none;
+    position: relative;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: 50px auto;
+}
+
+#my-repos ul {
+    list-style: none;
+    width: 100%;
+}
+
+#my-repos a {
+    text-decoration: none;
+}
+
+#my-repos ul li {
+    padding: 10px 0;
+    padding-left: 10px;
+    font-size: 25px;
+    font-family: PoppinsL, Arial, Helvetica, sans-serif;
+    color: var(--see-my-repos-color);
+    background-color: var(--my-repos-background);
+    border-radius: 5px;
+    margin: 15px 0;
+    transition: 0.5s;
+}
+
+#my-repos ul li:hover {
+    background-color: var(--my-repos-hover);
+}
+
+.directions {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.div-repos-quantity {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    width: auto;
+    margin-top: 5px;
+    right: 5%;
+}
+
+.div-repos-quantity .label-info-repo {
+    display: block;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+    color: var(--label-info-repo);
+    font-size: 20px;
+    font-family: PoppinsSB, Arial, Helvetica, sans-serif;
+}
+
+.div-repos-quantity p {
+    display: block;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: var(--repos-quantity);
+    font-size: 35px;
+    font-family: PoppinsL, Arial, Helvetica, sans-serif;
+    font-weight: 900;
+} */
 @media only screen and (max-width: 750px) {
     header {
         background-position-x: 0px;
