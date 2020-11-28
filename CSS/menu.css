@@ -12,49 +12,63 @@ body {
         position: relative;
         width: 100%;
         height: 100vh;
-        background-image: url('../IMG/pexels-cottonbro-5054213.jpg');
+        background-image: url('../IMG/971.jpg');
         background-size: cover;
         background-attachment: fixed;
     }
     #nav-computer-menu {
         width: 100%;
+        height: 6.5rem;
         background-color: var(--body);
         /*#1f1f1ffa*/
         z-index: 100;
+        display: flex;
         position: fixed;
         border-bottom: 0.05rem solid var(--menu-nav-bar-border);
+        top: 0;
     }
     #computer-menu {
         display: flex;
         position: relative;
         list-style: none;
-        margin: 0 auto;
-        justify-content: center;
+        justify-content: flex-end;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-right: 5%;
+        flex: auto;
     }
     #computer-menu a {
         position: relative;
-        margin: 0 1rem;
+        margin: 0 1.5rem;
+        display: inline-block;
+        height: 75%;
+        top: 50%;
+        transform: translateY(-50%);
+        text-decoration: none;
+        color: #333;
     }
     #computer-menu a[href="#"] span {
+        width: 100% !important;
+    }
+    #computer-menu a:hover span {
         width: 100% !important;
     }
     #computer-menu a li {
         position: relative;
         display: inline-block;
-        color: var(--menu-nav-bar-options);
-        padding: 20px;
+        color: var(--eufranio-title-background);
+        padding: 10px;
         font-family: PoppinsL, RobotoL, Arial, Helvetica, sans-serif;
         font-size: 1.6rem;
     }
     #computer-menu a span {
         position: absolute;
         bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
+        left: 0;
         height: 4px;
-        background-color: var(--menu-nav-bar-options);
+        background: var(--menu-nav-bar-options);
         border-radius: 20px;
-        width: 0%;
+        width: 4.5% !important;
     }
     #mobile-menu{
         display: none;
@@ -67,52 +81,18 @@ body {
         top: 0;
         width: 100%;
         height: 100%;
-        background: linear-gradient(to right, #31313188, #24242488);
+        background: linear-gradient(to left, #0de4b279, #0a97e379);
     }
     #home-page-title {
         position: absolute;
         width: 100%;
         text-align: center;
-        font-size: 4rem;
+        font-size: 10rem;
         top: 50%;
         transform: translateY(-50%);
         font-family: PoppinsEL, RobotoL, Arial, Helvetica, sans-serif;
         text-transform: uppercase;
         color: #fff;
-    }
-    #social-media-contact {
-        display: flex;
-        position: absolute;
-        justify-content: center;
-        top: 50%;
-        right: 0;
-        width: 7%;
-        height: 60%;
-        background-color: var(--social-media-background);
-        list-style: none;
-        transform: translateY(-50%);
-        border-radius: 0.5rem 0 0 0.5rem;
-    }
-    #social-media-contact a {
-        text-decoration: none;
-        margin: 0 1rem;
-    }
-    #social-media-contact li {
-        position: relative;
-        height: 100%;
-    }
-    #social-media-contact li i {
-        display: block;
-        position: relative;
-        color: var(--social-media-icons);
-        font-size: 2.5rem;
-        top: 50%;
-        transform: translateY(-50%);
-        border-radius: 50%;
-        transition: 0.5s
-    }
-    #social-media-contact li i:hover {
-        box-shadow: 0 0 0.4rem var(--social-media-icons-hover);
     }
     #secret-profile {
         text-decoration: none;
@@ -120,15 +100,15 @@ body {
         font-size: 2.5rem;
         display: inline-block;
         position: absolute;
-        left: 0;
         top: 50%;
+        left: 5%;
         transform: translateY(-50%);
         padding: 0 1rem;
         text-align: center;
         color: var(--eufranio-title-color);
         background: var(--eufranio-title-background);
         cursor: pointer;
-        border-radius: 0 0.5rem 0.5rem 0;
+        border-radius: 0.5rem;
     }
 }
 

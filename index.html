@@ -1,37 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 
 
+    <link class="page-theme" rel="stylesheet" href="CSS/menu-dark-theme.css">
+    <link class="page-theme" rel="stylesheet" href="CSS/index-dark-theme.css">
+    <link class="page-theme" rel="stylesheet" href="CSS/footer-dark-theme.css">
+
     <link rel="stylesheet" href="CSS/universal.css">
     <link rel="stylesheet" href="CSS/menu.css">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="CSS/footer.css">
 
-    <link class="page-theme" rel="stylesheet" href="CSS/menu-dark-theme.css">
-    <link class="page-theme" rel="stylesheet" href="CSS/index-dark-theme.css">
-    <link class="page-theme" rel="stylesheet" href="CSS/footer-dark-theme.css">
     <script src="https://kit.fontawesome.com/5c7edfd842.js" crossorigin="anonymous"></script>
     <title>Eufránio Diogo / Home</title>
 </head>
+
 <body>
+    <div class="preloader-main-container">
+        <div class="preloader-container">
+            <div id="loader-1" class="loader"></div>
+            <div id="loader-2" class="loader"></div>
+            <div id="loader-3" class="loader"></div>
+        </div>
+    </div>
     <header>
         <nav id="nav-computer-menu">
             <h1 id="secret-profile">eufránio</h1>
             <ul id="computer-menu">
-                <a href="HTML/my-works.html">
-                    <li class="menu-itens">My Works</li>
-                    <span></span>
-                </a>
                 <a href="#">
-                    <li class="menu-itens">Home</li>
+                    <li class="menu-itens">Trabalhos</li>
                     <span></span>
                 </a>
-                <a href="HTML/reminder.html">
-                    <li class="menu-itens">Reminder</li>
+                <a href="HTML/services.html">
+                    <li class="menu-itens">Serviços</li>
+                    <span></span>
+                </a>
+                <a href="HTML/about-me.html">
+                    <li class="menu-itens">Sobre-Me</li>
                     <span></span>
                 </a>
             </ul>
@@ -40,151 +50,65 @@
                 <i class="fas fa-bars"></i>
             </button>
             <ul id="mobile-menu">
-                <a href="HTML/my-works.html">
-                    <li class="menu-itens">My Works</li>
-                    <span></span>
-                </a>
+
                 <a href="#">
                     <li class="menu-itens">Home</li>
                     <span></span>
                 </a>
-                <a href="HTML/reminder.html">
+                <a href="HTML/services.html">
+                    <li class="menu-itens">My Works</li>
+                    <span></span>
+                </a>
+                <a href="HTML/about-me.html">
                     <li class="menu-itens">Reminder</li>
                     <span></span>
                 </a>
             </ul>
 
-            <ul id="social-media-contact">
-                <a href="https://github.com/EufranioDiogo" target="_blank">
-                    <li><i class="fab fa-github"></i></li>
-                </a>
-                <a href="https://www.facebook.com/EufranioDiogo10/" target="_blank">
-                    <li><i class="fab fa-facebook"></i></li>
-                </a>
-            </ul>
         </nav>
         <div class="filter"></div>
-        <h1 id="home-page-title">Welcome to my <strong style="font-family: PoppinsSB;">Portifolio</strong></h1>
+        <h1 id="home-page-title" hi="&#128075;">Bem vindo<br>ao meu<br><strong style="font-family: PoppinsSB;">Portfolio</strong></h1>
     </header>
 
     <div id="main-content">
-        <div id="user-description">
-            <img src="https://avatars3.githubusercontent.com/u/62727833?s=460&u=1c3b3565a90b80442fbb2d0b01f45e816a59ddea&v=4" alt="My Profile Picture of github">
-            <div class="user-info">
-                <p><i class="fas fa-user"></i><strong>Name:</strong> Eufránio Diogo</p>
-                <p><i class="fas fa-laptop"></i><strong>Area:</strong> Front-end Development</p>
-                <p><i class="fas fa-briefcase"></i><strong>Occupation:</strong> Computer Science Student</p>
-                <p><i class="fas fa-globe-africa"></i><strong>Nationality:</strong> Angolan</p>
-                <div class="div-theme-conteiner">
-                    <p>Select your favorite color theme:</p>
-                    <button id="btn-dark-theme" :class="{active: theme == 'dark'}" v-on:click="darkTheme"></button>
-                    <button id="btn-white-theme" :class="{active: theme == 'light'}" v-on:click="lightTheme"></button>
+
+        <h1>Meus Trabalhos</h1>
+
+        <div class="row projects-container">
+            <div class="sub-row">
+                <div v-for="index in projectsShowed" class="project-container">
+                    <div class="project-description">
+                        <div class="project-main-details">
+                            <a :href="projects[index - 1].link" target="_blank">
+                                <h1 class="project-title">{{ projects[index - 1].name }}</h1>
+                            </a>
+                            <p class="project-explanation">{{ projects[index - 1].desc }}</p>
+                            <p class="type">{{ projects[index - 1].type}}</p>
+                            <a :href="projects[index - 1].link" target="_blank" class="btn-visit-site">Visitar</a>
+                        </div>
+
+                        <a :href="projects[index - 1].link" target="_blank">
+                            <img :src="projects[index - 1].img" :alt="projects[index - 1].name">
+                        </a>
+
+                        <h2 class="project-number">{{ index <= 9 ? '0' + (index - 1) : index }}</h2>
+                    </div>
                 </div>
             </div>
+
+            <button class="see-more-project" @click="showMoreProjects">Ver mais Projectos</button>
         </div>
 
-        <h1 class="normal-text">I work with:</h1>
-        <ul class="i-work-with">
-            <li>
-                <i title="JavaScript" class="fab fa-js" style="color: #ffd900"></i>
-                <div class="level-conteiner">
-                    <div id="js-level" class="level-bar" :style="{width: levels.jsLevel + '%'}">
-                        <p class="percentage">{{ levels.jsLevel }}%</p>
-                    </div>
-                </div>
-                <p class="tech-denomination">JavaScript</p>
-            </li>
-            <li>
-                <i title="HTML 5" class="fab fa-html5" style="color: #ff1e00"></i>
-                <div class="level-conteiner">
-                    <div id="html5-level" class="level-bar" :style="{width: levels.html5Level + '%'}">
-                        <p class="percentage">{{ levels.html5Level }}%</p>
-                    </div>
-                </div>
-                <p class="tech-denomination">HTML5</p>
-            </li>
-            <li>
-                <i title="CSS 3" class="fab fa-css3-alt" style="color: #00e1ff"></i>
-                <div class="level-conteiner">
-                    <div id="css3-level" class="level-bar" :style="{width: levels.css3Level + '%'}">
-                        <p class="percentage">{{ levels.css3Level }}%</p>
-                    </div>
-                </div>
-                <p class="tech-denomination">CSS3</p>
-            </li>
-            <li>
-                <i title="Vue 3" class="fab fa-vuejs" style="color: #00ff88"></i>
-                <div class="level-conteiner">
-                    <div id="vuejs-level" class="level-bar" :style="{width: levels.vuejsLevel + '%'}">
-                        <p class="percentage">{{ levels.vuejsLevel }}%</p>
-                    </div>
-                </div>
-                <p class="tech-denomination">Vue.js</p>
-            </li>
-            <li>
-                <i title="Node.js" class="fab fa-node-js" style="color: #00a914" ></i>
-                <div class="level-conteiner">
-                    <div id="nodejs-level" class="level-bar" :style="{width: levels.nodejsLevel + '%'}">
-                        <p class="percentage">{{ levels.nodejsLevel }}%</p>
-                    </div>
-                </div>
-                <p class="tech-denomination">Node.js</p>
-            </li>
-        </ul>
 
-        <h2 class="normal-text">What I am doing?</h2>
-        <p>Actually I'm studying back-end, doing challenges at <a href="https://devchallenges.io" target="_blank">devchallenges.io</a>, and also working in some clients projects.</p>
+        <footer>
 
-        <h2 class="normal-text">You can see some of my works</h2>
-        <p class="normal-text">Better than words is show the things that I'm doing.<a href="HTML/my-works.html"> My Works</a>.</p>
-        <!--
-        <ul class="works-that-already-done">
-            <a target="_blank" href="https://eufraniodiogo.github.io/cheesecake-recipe"><li>Cheesecake</li></a>
-        </ul>-->
+        </footer>
+        <!--{{ repo.icon }}-->
 
-        <h2 class="normal-text">What can I build?</h2>
-        <p>I can build a complet Front-end part of a website.</p>
-
-        <h2 class="normal-text">More about myself</h2>
-        <p>I'm Eufránio, I'm a young body trying to live the most exiciting life that I can, not looking to the sense of life, loving to code beautiful things and get challenged everytime.</p>
-        <p>I like to be realistic and also a beliver.</p>
-        <p>Some of my hobbies: Talk with friends, code, listen music, read and relax.</p>
-    </div>
-    <button id="see-my-repos">
-        Get access to all my repos
-    </button>
-    <div class="div-repos-quantity" style="display: none;">
-        <label class="label-info-repo">Repo Quantity</label>
-        <p id="repo-number">10</p>
-    </div>
-    <div id="my-repos">
-        <ul>
-            <a v-for="repo in repos" :href="repo.url" target="_blank">
-                <li> {{ repo.name }}</li>
-            </a>
-        </ul>
-    </div>
-    <footer>
-        <div class="footer-social-medias">
-            <a href="htpps://www.github.com/EufranioDiogo" target="_blank" id="github" class="footer-social-media-link">
-                <i class="fab fa-github icon"></i>
-            </a>
-            <a href="https://www.facebook.com/EufranioDiogo10/" target="_blank" id="facebook" class="footer-social-media-link">
-                <i class="fab fa-facebook icon"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/eufranio-diogo-a33145122/" target="_blank" id="linkedin" class="footer-social-media-link">
-                <i class="fab fa-linkedin icon"></i>
-            </a>
-        </div>
-
-        <div class="contact-me">
-            <a href="mailto:eufraniodiogo146@gmail.com" class="email">eufraniodiogo146@gmail.com</a>
-        </div>
-    </footer>
-    <!--{{ repo.icon }}-->
-    
-    <script src="index.js"></script>
-    <script src="JS/menu.js"></script>
-    <script src="JS/mobileMenu.js"></script>
+        <script src="index.js"></script>
+        <script src="VUE/proudProjects.js"></script>
+        <script src="JS/menu.js"></script>
+        <script src="JS/mobileMenu.js"></script>
 </body>
+
 </html>
