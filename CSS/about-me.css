@@ -116,8 +116,9 @@ a {
     color: var(--link);
 }
 
+
 .i-work-with {
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     position: relative;

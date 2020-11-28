@@ -25,6 +25,7 @@ body {
         display: flex;
         position: fixed;
         border-bottom: 0.05rem solid var(--menu-nav-bar-border);
+        top: 0;
     }
     #computer-menu {
         display: flex;
@@ -43,8 +44,13 @@ body {
         height: 75%;
         top: 50%;
         transform: translateY(-50%);
+        text-decoration: none;
+        color: #333;
     }
     #computer-menu a[href="#"] span {
+        width: 100% !important;
+    }
+    #computer-menu a:hover span {
         width: 100% !important;
     }
     #computer-menu a li {
@@ -62,7 +68,7 @@ body {
         height: 4px;
         background: var(--menu-nav-bar-options);
         border-radius: 20px;
-        width: 0%;
+        width: 4.5% !important;
     }
     #mobile-menu{
         display: none;

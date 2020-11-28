@@ -1,18 +1,10 @@
 header {
-    background-image: url('../IMG/pexels-startup-stock-photos-7375.jpg');
-    background-attachment: scroll;
+    top: 0 !important;
+    height: auto !important;
 }
 
 /*I was working at the white theme*/
 
-.control-conteiner {
-    position: relative;
-    margin: 2.5rem 0 5rem 0;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    width: 100%;
-}
 
 .filter-control-panel {
     display: flex;
@@ -36,23 +28,45 @@ header {
     border-radius: 0.5rem;
 }
 
-#main-conteiner h1, .principal-title {
-    color: var(--principal-title);
-    font-family: PoppinsL, RobotoL, Arial, Helvetica, sans-serif;
-    font-size: 3.5rem;
-    text-align: center;
-    margin-top: 3.5rem;
-    text-transform: capitalize;
-}
-
-#main-conteiner {
-    width: 90%;
+#main-content {
+    width: 89%;
     position: relative;
-    display: flex;
-    margin: 2.5rem auto;
-    flex-wrap: wrap;
+    margin: 10rem 0;
+    margin-left: 5%;
 }
 
+#main-content h1 {
+    color: var(--main-content-h1);
+    font-size: 32px;
+    font-family: PoppinsSB, Arial, Helvetica, sans-serif;
+    margin: 15px 0;
+    margin-bottom: 5.5rem;
+}
+
+#main-content h2 {
+    color: var(--main-content-h2);
+    font-size: 26px;
+    font-family: PoppinsL, Arial, Helvetica, sans-serif;
+    margin: 25px 0 10px 0;
+}
+
+#main-content p {
+    color: var(--main-content-p);
+    font-size: 16px;
+    font-family: PoppinsL, Arial, Helvetica, sans-serif;
+}
+
+
+
+.control-conteiner {
+    position: relative;
+    margin: 2.5rem 0 5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+/* 
 .project-link {
     width: 30%;
     height: 35.5rem;
@@ -136,7 +150,7 @@ header {
     font-size: 1.2rem;
     top: 2%;
     right: 2%;
-}
+} */
 
 @media only screen and (max-width: 750px) {
     #main-conteiner {

@@ -23,26 +23,17 @@
         <nav id="nav-computer-menu">
             <h1 id="secret-profile">eufránio</h1>
             <ul id="computer-menu">
-                <a href="#">
-                    <li class="menu-itens">My Works</li>
-                    <span></span>
-                </a>
                 <a href="../index.html">
-                    <li class="menu-itens">Home</li>
+                    <li class="menu-itens">Trabalhos</li>
                     <span></span>
                 </a>
-                <a href="reminder.html">
-                    <li class="menu-itens">Reminder</li>
+                <a href="#">
+                    <li class="menu-itens">Serviços</li>
                     <span></span>
                 </a>
-            </ul>
-
-            <ul id="social-media-contact">
-                <a href="https://github.com/EufranioDiogo" target="_blank">
-                    <li><i class="fab fa-github"></i></li>
-                </a>
-                <a href="https://www.facebook.com/EufranioDiogo10/" target="_blank">
-                    <li><i class="fab fa-facebook"></i></li>
+                <a href="about-me.html">
+                    <li class="menu-itens">Sobre-me</li>
+                    <span></span>
                 </a>
             </ul>
 
@@ -50,33 +41,24 @@
                 <i class="fas fa-bars"></i>
             </button>
             <ul id="mobile-menu">
-                <a href="#">
-                    <li class="menu-itens">My Works</li>
-                    <span></span>
-                </a>
                 <a href="../index.html">
-                    <li class="menu-itens">Home</li>
+                    <li class="menu-itens">Trabalhos</li>
                     <span></span>
                 </a>
-                <a href="reminder.html">
-                    <li class="menu-itens">Reminder</li>
+                <a href="#">
+                    <li class="menu-itens">Serviços</li>
                     <span></span>
                 </a>
-            </ul>
-
-            <ul id="social-media-contact">
-                <a href="https://github.com/EufranioDiogo" target="_blank">
-                    <li><i class="fab fa-github"></i></li>
-                </a>
-                <a href="https://www.facebook.com/EufranioDiogo10/" target="_blank">
-                    <li><i class="fab fa-facebook"></i></li>
+                <a href="about-me.html">
+                    <li class="menu-itens">Sobre-me</li>
+                    <span></span>
                 </a>
             </ul>
         </nav>
         <div class="filter"></div>
-        <h1 id="home-page-title">As much we work we get better in our work</h1>
     </header>
 
+    <!--
     <div class="control-conteiner">
         <div class="filter-control-panel">
             <h2 class="filter-title">Filter:</h2>
@@ -90,20 +72,22 @@
             </select>
         </div>
     </div>
+    -->
 
-    <div id="main-conteiner">
-        <a v-for="project in projects"
-            v-if="actualProjectTypeFilter == 'all' || actualProjectTypeFilter == project.type" class="project-link"
-            :href="project.link">
-            <div class="project-info">
-                <img class="project-img" :src="project.img" :alt="project.name">
-                <div class="project-desc-conteiner">
-                    <h2 class="project-name"> {{ project.name }} </h2>
-                    <p class="project-desc"> {{ project.desc }} </p>
-                </div>
-                <p class="project-type"> {{ project.type }}</p>
-            </div>
-        </a>
+    <div id="main-content">
+
+        <h1>De-me a oportunidade de colocar o seu site no ar, que eu mostrarei a você o que eu sei fazer de melhor.</h1>
+
+        <h2 class="normal-text">O que faço?</h2>
+        <p>Actualmente crio websites para clientes sendo eles pessoas singulares querendo promover seus negocios, marcas
+            ou promover as suas próprias instituições.</p>
+
+        <h2 class="normal-text">Qual é o meu background técnico?</h2>
+        <p>Estou me formando em engenharia informática pela UCAN(Universidade Católica de Angola) actualmente no 3º ano.</p>
+
+        <h2 class="normal-text">Em quanto tempo me entregas o site?</h2>
+        <p>Isso vai depender, após uma conversa podemos acertar prazos.</p>
+
     </div>
     <footer>
         <div class="footer-social-medias">

@@ -1,3 +1,11 @@
+setTimeout(() => {
+    let preloader = document.querySelector('.preloader-main-container');
+
+    preloader.style.opacity = '0';
+    setTimeout(() => {
+        preloader.style.display = 'none';
+    }, 600)
+}, 2000);
 
 let actualTheme = window.localStorage.getItem('theme')
 
@@ -18,7 +26,6 @@ if (actualTheme == null) {
         components[2].setAttribute('href', 'CSS/footer-white-theme.css')
     }
 }
-
 
 
 

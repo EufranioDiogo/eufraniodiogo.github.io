@@ -4,14 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link class="page-theme" rel="stylesheet" href="../CSS/menu-dark-theme.css">
+    <link class="page-theme" rel="stylesheet" href="../CSS/index-dark-theme.css">
+    <link class="page-theme" rel="stylesheet" href="../CSS/footer-dark-theme.css">
+
     <link rel="stylesheet" href="../CSS/universal.css">
     <link rel="stylesheet" href="../CSS/menu.css">
-    <link rel="stylesheet" href="../CSS/reminder.css">
+    <link rel="stylesheet" href="../CSS/about-me.css">
     <link rel="stylesheet" href="../CSS/footer.css">
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-    <link class="page-theme" rel="stylesheet" href="../CSS/menu-dark-theme.css">
-    <link class="page-theme" rel="stylesheet" href="../CSS/reminder-dark-theme.css">
-    <link class="page-theme" rel="stylesheet" href="../CSS/footer-dark-theme.css">
 
     <script src="https://kit.fontawesome.com/5c7edfd842.js" crossorigin="anonymous"></script>
     <title>Eufránio Diogo / Sobre-me</title>
@@ -24,11 +25,11 @@
             <h1 id="secret-profile">eufránio</h1>
             <ul id="computer-menu">
                 <a href="../index.html">
-                    <li class="menu-itens">Ínicio</li>
+                    <li class="menu-itens">Trabalhos</li>
                     <span></span>
                 </a>
-                <a href="my-works.html">
-                    <li class="menu-itens">Trabalhos</li>
+                <a href="services.html">
+                    <li class="menu-itens">Serviços</li>
                     <span></span>
                 </a>
                 <a href="#">
@@ -43,10 +44,10 @@
             <ul id="mobile-menu">
 
                 <a href="../index.html">
-                    <li class="menu-itens">Ínicio</li>
+                    <li class="menu-itens">Trabalhos</li>
                     <span></span>
                 </a>
-                <a href="my-works.html">
+                <a href="services.html">
                     <li class="menu-itens">Trabalhos</li>
                     <span></span>
                 </a>
@@ -68,45 +69,41 @@
                 <img src="../IMG/IMG_20190925_174931.jpg" class="user-image" alt="Eufránio Diogo">
 
                 <div class="user-description">
-                    <p>Olá, sou o Eufránio estudante de engenharia informática e desenvolder <strong>front-end</strong> desde 2019, actualmente
+                    <p>Olá, sou o Eufránio estudante de engenharia informática e desenvolder <strong>front-end</strong>
+                        desde 2019, actualmente
                         venho actuando como desenvolder freelancer nos meus tempos livres.</p>
                 </div>
             </div>
 
-            <h2 class="normal-text">O que eu consigo fazer?</h2>
-            <p>Sinceramente é uma pergunta díficil de responder porque gosto bastante de encarar novos desafios e pode
-                ser que aquilo que eu achava que não conseguiria fazer faça.</p>
-            <p>Portanto de-me a oportunidade de colocar o seu site no ar, que eu mostrarei a você o que eu sei fazer de
-                melhor.</p>
-
-
-            <h2>Tecs do meu kit de desenvolvimento</h2>
-            <ul class="i-work-with">
-                <li>
-                    <i title="JavaScript" class="fab fa-js" style="color: #ffd900"></i>
-                    <p class="tech-denomination">JavaScript</p>
-                </li>
-                <li>
-                    <i title="HTML 5" class="fab fa-html5" style="color: #ff1e00"></i>
-                    <p class="tech-denomination">HTML5</p>
-                </li>
-                <li>
-                    <i title="CSS 3" class="fab fa-css3-alt" style="color: #00e1ff"></i>
-                    <p class="tech-denomination">CSS3</p>
-                </li>
-                <li>
-                    <i title="Vue 3" class="fab fa-vuejs" style="color: #00ff88"></i>
-                    <p class="tech-denomination">Vue.js</p>
-                </li>
-                <li>
-                    <i title="Node.js" class="fab fa-node-js" style="color: #00a914"></i>
-                    <p class="tech-denomination">Node.js</p>
-                </li>
-            </ul>
-
         </div>
 
+
+
+        <h2>Tecs do meu kit de desenvolvimento</h2>
+        <ul class="i-work-with">
+            <li>
+                <i title="JavaScript" class="fab fa-js" style="color: #ffd900"></i>
+                <p class="tech-denomination">JavaScript</p>
+            </li>
+            <li>
+                <i title="HTML 5" class="fab fa-html5" style="color: #ff1e00"></i>
+                <p class="tech-denomination">HTML5</p>
+            </li>
+            <li>
+                <i title="CSS 3" class="fab fa-css3-alt" style="color: #00e1ff"></i>
+                <p class="tech-denomination">CSS3</p>
+            </li>
+            <li>
+                <i title="Vue 3" class="fab fa-vuejs" style="color: #00ff88"></i>
+                <p class="tech-denomination">Vue.js</p>
+            </li>
+            <li>
+                <i title="Node.js" class="fab fa-node-js" style="color: #00a914"></i>
+                <p class="tech-denomination">Node.js</p>
+            </li>
+        </ul>
     </div>
+    <!--
     <button id="see-my-repos">
         Get access to all my repos
     </button>
@@ -121,6 +118,7 @@
             </a>
         </ul>
     </div>
+    -->
     </div>
     <footer>
         <div class="footer-social-medias">
@@ -152,17 +150,17 @@
 
             let components = document.querySelectorAll('.page-theme');
 
-            components[0].setAttribute('href', '../CSS/menu-dark-theme.css')
-            components[1].setAttribute('href', '../CSS/reminder-dark-theme.css')
-            components[2].setAttribute('href', '../CSS/footer-dark-theme.css')
+            components[0].setAttribute('href', '../../CSS/menu-dark-theme.css')
+            components[1].setAttribute('href', '../../CSS/reminder-dark-theme.css')
+            components[2].setAttribute('href', '../../CSS/footer-dark-theme.css')
         } else {
             let components = document.querySelectorAll('.page-theme');
 
             if (actualTheme == 'light') {
                 console.log('dhdh')
-                components[0].setAttribute('href', '../CSS/menu-white-theme.css')
-                components[1].setAttribute('href', '../CSS/reminder-white-theme.css')
-                components[2].setAttribute('href', '../CSS/footer-white-theme.css')
+                components[0].setAttribute('href', '../../CSS/menu-white-theme.css')
+                components[1].setAttribute('href', '../../CSS/reminder-white-theme.css')
+                components[2].setAttribute('href', '../../CSS/footer-white-theme.css')
             }
         }
     </script>
