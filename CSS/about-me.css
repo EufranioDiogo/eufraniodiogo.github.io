@@ -43,12 +43,14 @@ tag {
     position: relative;
     display: flex;
     background: url("../IMG/pexels-markus-spiske-360591.jpg");
+    border-radius: 0.5rem;
 }
 
 #main-content .user-short-description img {
     width: 25%;
     position: relative;
     margin-bottom: 2rem;
+    border-radius: 0.5rem 0 0 0;
 }
 
 #main-content .user-short-description .user-description {
@@ -59,6 +61,8 @@ tag {
     top: 50%;
     left: 20%;
     background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0.2rem 0.2rem 1rem #ffffff2f;
 }
 
 .div-theme-conteiner {
@@ -125,29 +129,30 @@ a {
     margin-top: 10px;
     margin-bottom: 10px;
     list-style: none;
+    justify-content: space-between;
 }
 
-.i-work-with li {
+.i-work-with .list-item {
     display: flex;
     margin: 1rem 1rem 1rem 0;
     font-size: 30px;
     padding: 1rem;
     border-radius: 0.5rem;
-    background: #333;
-    justify-content: center;
+    background: #000000b3;
+    justify-content: space-between;
     align-items: center;
 }
 
-.i-work-with li i {
-    display: block;
-    width: 5%;
+.i-work-with .list-item i {
+    color: #ffffff;
 }
 
 .tech-denomination {
     font-family: PoppinsSB, sans-serif;
     font-size: 1.6rem;
     color: #ffffff !important;
-    margin-left: 2.5rem;
+    margin-left: 1.5rem;
+    font-weight: 600;
 }
 
 .sr-only {
