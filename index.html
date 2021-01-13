@@ -88,7 +88,7 @@
                         </div>
 
                         <a :href="projects[index - 1].link" target="_blank">
-                            <img :src="projects[index - 1].img" :alt="projects[index - 1].name">
+                            <img :src="projects[index - 1].img" :alt="projects[index - 1].name" class="project-img">
                         </a>
 
                         <h2 class="project-number u--heading2">{{ index <= 9 ? '0' + (index - 1) : index }}</h2>

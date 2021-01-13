@@ -97,7 +97,7 @@
     display: flex;
     flex-direction: column;
 }
-.projects-container .sub-row .project-container {
+.project-container {
     width: 70%;
     height: 45rem;
     margin: 2.5rem 0;
@@ -120,16 +120,11 @@
     right: 0 !important;
     left: unset;
 }
-.projects-container .sub-row .project-container:nth-child(even) {
+.project-container:nth-child(even) {
     align-self: flex-end !important;
 }
-.projects-container .sub-row .project-container:hover .project-description {
+.project-container:hover .project-description {
     opacity: 1;
-}
-.projects-container .sub-row .project-container img {
-    height: 100%;
-    object-fit: cover;
-    border-radius: 1rem;
 }
 .project-description {
     display: flex;
@@ -219,18 +214,21 @@
 
 
 
-.project-description img {
+.project-description .project-img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
     position: absolute;
     width: 35%;
     height: 45% !important;
     object-fit: cover;
     right: 5%;
     top: 5%;
-    box-shadow: 0 -0.1rem 0.5rem rgba(0, 0, 0, 0.082);
+    border: 0.1rem solid #00000010;
     transition: 1s;
     z-index: 1;
 }
-.project-description img::before {
+.project-description .project-img::before {
     content: "";
     position: absolute;
     background-color: #0000006f;
@@ -238,7 +236,7 @@
     height: 100%;
     z-index: 10;
 }
-.project-description img::after {
+.project-description .project-img::after {
     content: "Veja melhor";
     position: absolute;
     top: 50%;
@@ -248,7 +246,7 @@
     color: #fff;
     z-index: 11;
 }
-.project-description img:hover {
+.project-description .project-img:hover {
     top: 2.5%;
     right: 2.5%;
     width: 95%;
@@ -301,8 +299,6 @@
     transition: 0;
     display: none;
 }
-
-
 @media only screen and (min-width: 1750px) {
     #main-content {
         width: 50%;
