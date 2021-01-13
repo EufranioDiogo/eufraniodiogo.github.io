@@ -76,26 +76,26 @@
 
         <div class="row projects-container">
             <div class="sub-row">
-                <div v-for="index in projectsShowed" class="project-container">
-                    <div class="project-description">
-                        <div class="project-main-details">
-                            <a :href="projects[index - 1].link" target="_blank">
-                                <h1 class="project-title u--heading1">{{ projects[index - 1].name }}</h1>
-                            </a>
-                            <p class="project-explanation u--paragraph">{{ projects[index - 1].desc }}</p>
-                            <p class="type u--paragraph">{{ projects[index - 1].type}}</p>
-                            <a :href="projects[index - 1].link" target="_blank" class="btn-visit-site">Visitar</a>
-                        </div>
-
-                        <a :href="projects[index - 1].link" target="_blank">
-                            <img :src="projects[index - 1].img" :alt="projects[index - 1].name" class="project-img">
-                        </a>
-
-                        <h2 class="project-number u--heading2">{{ index <= 9 ? '0' + (index - 1) : index }}</h2>
-                    </div>
-                </div>
             </div>
 
+            <!--
+
+                <div class="project-description">
+                    <div class="project-main-details">
+                        <a :href="projects[index - 1].link" target="_blank">
+                            <h1 class="project-title u--heading1">{{ projects[index - 1].name }}</h1>
+                        </a>
+                        <p class="project-explanation u--paragraph">{{ projects[index - 1].desc }}</p>
+                        <a :href="projects[index - 1].link" target="_blank" class="btn-visit-site">Visitar</a>
+                    </div>
+
+                    <a :href="projects[index - 1].link" target="_blank">
+                        <img :src="projects[index - 1].img" :alt="projects[index - 1].name" class="project-img">
+                    </a>
+
+                    <h2 class="project-number u--heading2">{{ index <= 9 ? '0' + (index - 1) : index }}</h2>
+                </div>
+            -->
            <!-- <button class="see-more-project" @click="showMoreProjects">Ver mais Projectos</button>-->
         </div>
 
