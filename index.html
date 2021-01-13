@@ -72,7 +72,7 @@
 
     <div id="main-content">
 
-        <h1>Meus Trabalhos</h1>
+        <h1 class="u--heading1">Meus Trabalhos</h1>
 
         <div class="row projects-container">
             <div class="sub-row">
@@ -80,10 +80,10 @@
                     <div class="project-description">
                         <div class="project-main-details">
                             <a :href="projects[index - 1].link" target="_blank">
-                                <h1 class="project-title">{{ projects[index - 1].name }}</h1>
+                                <h1 class="project-title u--heading1">{{ projects[index - 1].name }}</h1>
                             </a>
-                            <p class="project-explanation">{{ projects[index - 1].desc }}</p>
-                            <p class="type">{{ projects[index - 1].type}}</p>
+                            <p class="project-explanation u--paragraph">{{ projects[index - 1].desc }}</p>
+                            <p class="type u--paragraph">{{ projects[index - 1].type}}</p>
                             <a :href="projects[index - 1].link" target="_blank" class="btn-visit-site">Visitar</a>
                         </div>
 
@@ -91,17 +91,37 @@
                             <img :src="projects[index - 1].img" :alt="projects[index - 1].name">
                         </a>
 
-                        <h2 class="project-number">{{ index <= 9 ? '0' + (index - 1) : index }}</h2>
+                        <h2 class="project-number u--heading2">{{ index <= 9 ? '0' + (index - 1) : index }}</h2>
                     </div>
                 </div>
             </div>
 
-            <button class="see-more-project" @click="showMoreProjects">Ver mais Projectos</button>
+           <!-- <button class="see-more-project" @click="showMoreProjects">Ver mais Projectos</button>-->
+        </div>
+
+        <div class="preloader-waiting-projects-container">
+            <div class="preloader">
+                
+            </div>
         </div>
 
 
         <footer>
+            <div class="social-medias-container">
+                <a href="http://">
+                    <i class="fab fa-github-square"></i>
+                </a>
+                <a href="http://">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="http://">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+            </div>
 
+            <h1 class="u--heading1">Thanks to be right</h1>
+
+            <p class="u--paragraph">Eufránio Diogo Portfolio</p>
         </footer>
         <!--{{ repo.icon }}-->
 

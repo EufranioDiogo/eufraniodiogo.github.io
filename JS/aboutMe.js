@@ -29,7 +29,7 @@ const mytoolkit = [
     },
     {
         techName: 'C',
-        icon: '',
+        icon: 'fab fa-cuttlefish',
     },
     {
         techName: 'git',

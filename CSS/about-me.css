@@ -17,22 +17,21 @@ tag {
     margin-left: 5%;
 }
 
-#main-content h1 {
+.u--heading1 {
     color: var(--main-content-h1);
     font-size: 32px;
     font-family: PoppinsSB, Arial, Helvetica, sans-serif;
     margin: 15px 0;
     text-transform: capitalize;
 }
-
-#main-content h2 {
+.u--heading2 {
     color: var(--main-content-h2);
     font-size: 26px;
     font-family: PoppinsL, Arial, Helvetica, sans-serif;
     margin: 25px 0 10px 0;
 }
 
-#main-content p {
+.u--paragraph {
     color: var(--main-content-p);
     font-size: 16px;
     font-family: PoppinsL, Arial, Helvetica, sans-serif;
@@ -159,6 +158,9 @@ a {
     color: var(--main-content-h2);
     font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
+}
+footer {
+    margin-bottom: -10rem !important;
 }
 /* 
 .works-that-already-done {
