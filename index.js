@@ -1,11 +1,13 @@
-setTimeout(() => {
+/*setTimeout(() => {
     let preloader = document.querySelector('.preloader-main-container');
 
     preloader.style.opacity = '0';
     setTimeout(() => {
         preloader.style.display = 'none';
     }, 600)
-}, 2000);
+}, 2000);*/
+let preloader = document.querySelector('.preloader-main-container');
+preloader.style.display = 'none';
 
 let actualTheme = window.localStorage.getItem('theme')
 
@@ -162,17 +164,49 @@ let app = new Vue({
             components[2].setAttribute('href', 'CSS/footer-dark-theme.css')
             this.theme = 'dark'
             window.localStorage.setItem('theme', 'dark')
-
         },
         showMoreProjects() {
-            if(this.projectsShowed < this.projects.length) {
-                this.projectsShowed += this.projects.length - this.projectsShowed > 3 ? 3 : this.projects.length - this.projectsShowed;
+            const preloader = document.querySelector('.preloader-waiting-projects-container .preloader');
 
-                console.log(this.projectsShowed == this.projects.length)
-                if (this.projectsShowed == this.projects.length) {
-                    document.querySelector('.see-more-project').style.display = 'none';
-                }
+            if (this.projectsShowed >= this.projects.length) {
+                preloader.style.display = 'none';
+                preloader.style.opacity = '0';
+            } else {
+                preloader.style.display = 'block';
+
+                setTimeout(() => {
+                    preloader.style.opacity = '1';
+                })
             }
+
+            setTimeout(() => {
+                if(this.projectsShowed < this.projects.length) {
+                    this.projectsShowed += this.projects.length - this.projectsShowed > 3 ? 3 : this.projects.length - this.projectsShowed;
+                    /*
+                    if (this.projectsShowed == this.projects.length) {
+                        document.querySelector('.see-more-project').style.display = 'none';
+                    }*/
+                    preloader.style.opacity = '0';
+                    setTimeout(() => {
+                        preloader.style.display = 'none';
+                    }, 200)
+                }
+            }, 2000);
         }
     },
-})
+});
+
+let projectsFlag = true;
+
+window.onscroll = (e) => {
+    if (((window.innerHeight + window.scrollY) >= document.body.offsetHeight) && (app.projectsShowed < app.projects.length)) {
+        console.log(app.projectsShowed < app.projects.length)
+        if (projectsFlag) {
+            app.showMoreProjects();
+            projectsFlag = false;
+            setTimeout(()=>{
+                projectsFlag = true;
+            }, 1000);
+        }
+    }
+}

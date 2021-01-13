@@ -2,31 +2,38 @@ footer{
     position: relative;
     width: 100%;
     display: flex;
-    flex-direction: column;
-    background-color: var(--footer-background);
+    background-color: transparent;
     margin-top: 10rem;
     align-items: center;
+    justify-content: space-between;
+    padding: 2.5rem 2rem;
+    margin-bottom: -5rem;
+    box-sizing: border-box;
 }
-footer .footer-social-medias{
-    padding: 20px 1.0px;
-    margin-right: 2%;
-    border: 0.5rem;
-    display: flex;
-    justify-content: space-around;
-}
-.footer-social-medias .footer-social-media-link{
-    margin: 0 1.0rem;
-}
-.footer-social-media-link .icon{
-    font-size: 2.5rem;
-    color: var(--footer-text);
+.social-medias-container .fab {
+    text-decoration: none;
+    color: #000000a5;
+    margin-right: 1rem;
+    font-size: 2rem;
     transition: 0.5s;
 }
-.icon:hover{
-    transform: rotate(360deg) scale(1.5);
+.social-medias-container .fab:hover {
+    color: #000000;
 }
-.contact-me .email{
-    font-size: 1.8rem;
-    color: var(--footer-text);
-    font-family: PoppinsSB, sans-serif;
+footer::before, footer::after {
+    content: "";
+    width: 30rem;
+    height: 3.5rem;
+    border-width: 0.2rem;
+    border-style: solid;
+    position: absolute;
+    top: 0;
+}
+footer::before {
+    border-color: #0de4b1 transparent transparent #0de4b1;
+    left: 0;
+}
+footer::after {
+    border-color:  #0a97e3 #0a97e3 transparent  transparent;
+    right: 0;
 }
