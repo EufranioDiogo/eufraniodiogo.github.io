@@ -1,0 +1,146 @@
+[
+    {
+        "id": 0,
+        "name": "30 Dias de CSS",
+        "link": "https://eufraniodiogo.github.io/30diasDeCSS",
+        "desc": "30 days challenging my CSS skills",
+        "img": "http://res.cloudinary.com/drh6wwwtw/image/upload/v1610342239/30DiasCSS_zq1lfu.png",
+        "type": "Website",
+        "techs": ["html", "css"]
+    },
+    {
+        "id": 1,
+        "name": "Solitário",
+        "link": "HTML/projects.html?id=1",
+        "desc": "Construindo o Jogo Solitário",
+        "img": "IMG/solitario.png",
+        "type": "Jogo",
+        "techs": ["java"]
+    },
+    {
+        "id": 2,
+        "name": "Weather App",
+        "link": "https://eufraniodiogo.github.io/Weather-App",
+        "desc": "I did this game for fun and I really like it, try to play and I think that you will like.",
+        "img": "http://res.cloudinary.com/drh6wwwtw/image/upload/v1610342273/WeatherAppProject_ryyotv.jpg",
+        "type": "WebApp",
+        "techs": ["html", "css", "api", "js"]
+    },
+    {
+        "id": 3,
+        "name": "Image Uploader",
+        "link": "https://secret-waters-42028.herokuapp.com/",
+        "desc": "A full-stack project that allow you to upload images to a online-server.",
+        "img": "http://res.cloudinary.com/drh6wwwtw/image/upload/v1610342314/ImgUploader_wfg14s.png",
+        "type": "WebApp",
+        "techs": ["html", "css", "api", "nodejs", "database", "vue.js"]
+    },
+    {
+        "id": 4,
+        "name": "My Unsplash",
+        "link": "https://evening-fjord-55618.herokuapp.com/",
+        "desc": "A full-stack project of a photo library free to share",
+        "img": "http://res.cloudinary.com/drh6wwwtw/image/upload/v1610342398/MyUnsplash_rgrlhj.png",
+        "type": "WebApp",
+        "techs": ["html", "css", "nodejs", "database", "vue.js"]
+    },
+    {
+        "id": 5,
+        "name": "Catwiki",
+        "link": "https://ancient-bayou-07455.herokuapp.com/",
+        "desc": "Cat lovers will love it :)",
+        "img": "http://res.cloudinary.com/drh6wwwtw/image/upload/v1610342458/Catwiki_dpscxv.png",
+        "type": "Website",
+        "techs": ["html", "css", "api", "nodejs", "database", "vue.js"]
+    },
+    {
+        "id": 6,
+        "name": "Rock Paper Scissor",
+        "link": "https://eufraniodiogo.github.io/Rock-Paper-Scissor",
+        "desc": "I did this game for fun and I really like it, try to play and I think that you will like.",
+        "img": "http://res.cloudinary.com/drh6wwwtw/image/upload/v1610342503/RockPaperScissorProject_fe2icd.png",
+        "type": "Jogo",
+        "techs": ["html", "css", "js"]
+    },
+    {
+        "id": 7,
+        "name": "Download Organizer",
+        "link": "https://github.com/EufranioDiogo/Download-Organizer",
+        "desc": "Organize every file that appears at downloads folder and put it in right location.",
+        "img": "IMG/pexels-christina-morillo-1181263.jpg",
+        "type": "script",
+        "techs": ["python"]
+    },
+    {
+        "id": 8,
+        "name": "Countries Quiz",
+        "link": "https://eufraniodiogo.github.io/Countries-Quiz",
+        "desc": "A web app that put you updated about geography of the world knowing every countries...",
+        "img": "http://res.cloudinary.com/drh6wwwtw/image/upload/v1610342563/Countries-Quiz_tjidr0.png",
+        "type": "Jogo",
+        "techs": ["html", "css", "vue.js"]
+    },
+    {
+        "id": 9,
+        "name": "Awesome Quotes",
+        "link": "https://eufraniodiogo.github.io/AwesomeQuotes",
+        "desc": "Do you like quotes? Take a look at the best website to get all the your quotes.",
+        "img": "http://res.cloudinary.com/drh6wwwtw/image/upload/v1610342615/AwesomeQuotes_zwuyva.png",
+        "type": "WebApp",
+        "techs": ["html", "css", "vue.js", "api"]
+    },
+    {
+        "id": 10,
+        "name": "Todo",
+        "link": "https://eufraniodiogo.github.io/Todo",
+        "desc": "A todo app app that I did using data structures.",
+        "img": "http://res.cloudinary.com/drh6wwwtw/image/upload/v1610342657/Todo_yhotqg.png",
+        "type": "WebApp",
+        "techs": ["html", "css", "vue.js"]
+    },
+    {
+        "id": 11,
+        "name": "Github Jobs",
+        "link": "https://eufraniodiogo.github.io/Github-Jobs",
+        "desc": "Do you want to know the jobs opportunities around you? If yes this the best solution",
+        "img": "http://res.cloudinary.com/drh6wwwtw/image/upload/v1610342722/Github-Jobs_mtnwxh.png",
+        "type": "WebApp",
+        "techs": ["html", "css", "vue.js", "api"]
+    },
+    {
+        "id": 12,
+        "name": "Edie HomePage",
+        "link": "https://eufraniodiogo.github.io/Edie-Homepage",
+        "desc": "Beautiful and Amazing website design!",
+        "img": "http://res.cloudinary.com/drh6wwwtw/image/upload/v1610342778/EdieHomePage_b8wahy.png",
+        "type": "Website",
+        "techs": ["html", "css"]
+    },
+    {
+        "id": 13,
+        "name": "Comandos de git",
+        "link": "https://github.com/EufranioDiogo/comandos-git",
+        "desc": "Repository created by Taba and I liked so much and I decided to contribuite and I loved because I also use git and it will help me and others hope so.",
+        "img": "https://res.cloudinary.com/drh6wwwtw/image/upload/v1610342826/ComandoGit_idwefn.png",
+        "type": "contribution",
+        "techs": []
+    },
+    {
+        "id": 14,
+        "name": "Windbnb",
+        "link": "https://eufraniodiogo.github.io/windbnb",
+        "desc": "A todo app app that I did using data structures.",
+        "img": "http://res.cloudinary.com/drh6wwwtw/image/upload/v1610341869/Windbnb_lftqhz.png",
+        "type": "Website",
+        "techs": ["html", "css", "vue.js"]
+    },
+    {
+        "id": 15,
+        "name": "Checkout Form",
+        "link": "https://eufraniodiogo.github.io/Checkout-Form",
+        "desc": "A todo app app that I did using data structures.",
+        "img": "http://res.cloudinary.com/drh6wwwtw/image/upload/v1610343289/CheckoutForm_s7ehxv.png",
+        "type": "Website",
+        "techs": ["html", "css"]
+    }
+]

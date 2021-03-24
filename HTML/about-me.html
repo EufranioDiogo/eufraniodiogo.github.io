@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link class="page-theme" rel="stylesheet" href="../CSS/menu-dark-theme.css">
-    <link class="page-theme" rel="stylesheet" href="../CSS/index-dark-theme.css">
-    <link class="page-theme" rel="stylesheet" href="../CSS/footer-dark-theme.css">
+    <link class="page-theme" rel="stylesheet" href="../CSS/menu-white-theme.css">
+    <link class="page-theme" rel="stylesheet" href="../CSS/index-white-theme.css">
+    <link class="page-theme" rel="stylesheet" href="../CSS/footer-white-theme.css">
 
     <link rel="stylesheet" href="../CSS/universal.css">
     <link rel="stylesheet" href="../CSS/menu.css">
@@ -123,13 +123,13 @@
         let actualTheme = window.localStorage.getItem('theme')
 
         if (actualTheme == null) {
-            actualTheme = 'dark'
+            actualTheme = 'white'
 
             let components = document.querySelectorAll('.page-theme');
 
-            components[0].setAttribute('href', '../../CSS/menu-dark-theme.css')
-            components[1].setAttribute('href', '../../CSS/reminder-dark-theme.css')
-            components[2].setAttribute('href', '../../CSS/footer-dark-theme.css')
+            components[0].setAttribute('href', '../../CSS/menu-white-theme.css')
+            components[1].setAttribute('href', '../../CSS/reminder-white-theme.css')
+            components[2].setAttribute('href', '../../CSS/footer-white-theme.css')
         } else {
             let components = document.querySelectorAll('.page-theme');
 

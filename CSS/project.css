@@ -1,0 +1,100 @@
+header {
+    top: 0;
+    height: auto;
+    background-image: none !important;
+}
+#nav-computer-menu {
+    top: 0;
+}
+.project-show-container {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    margin: 10rem 0;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.project-name, .u--heading1 {
+    font-size: 4.2rem;
+    font-family: PoppinsSL, Arial, Helvetica, sans-serif;
+    margin-bottom: 2.5rem;
+}
+.menu-list {
+    display: flex;
+    list-style: none;
+}
+.menu-list .menu-item {
+    font-size: 1.4rem;
+    font-family: PoppinsSL, Arial, Helvetica, sans-serif;
+    padding: 1rem 2rem;
+    margin-left: 1.5rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    color: #0000007d;
+    box-shadow: -0.5rem 0.5rem 0.5rem #00000010;
+    cursor: pointer;
+    margin-bottom: 2.5rem;
+}
+.menu-list .menu-item:hover {
+    color: #000;
+}
+.menu-list .active {
+    color: #000;
+}
+.menu-list .menu-item:first-child {
+    margin-left: 0;
+}
+.project-content {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: -0.5rem 0.5rem 0.5rem #00000006;
+    border-radius: 0.5rem;
+    padding: 2.5rem 4rem;
+}
+.u--heading2 {
+    color: #555;
+    font-size: 2rem;
+    font-family: PoppinsSL, Arial, Helvetica, sans-serif;
+    margin-bottom: 1.5rem;
+}
+.u--text {
+    margin-bottom: 1rem;
+    color: #000;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    font-family: PoppinsL, Arial, Helvetica, sans-serif;
+}
+.about-section {
+    display: none;
+    flex-direction: column;
+    border-bottom: 0.2rem solid rgba(0, 0, 0, 0.078);
+}
+.design {
+    display: none;
+    flex-direction: column;
+    display: none;
+}
+.project-img {
+    align-self: center;
+    margin: 2.5rem 0;
+    border-radius: 0.5rem;
+}
+
+.download {
+    display: none;
+    flex-direction: column;
+}
+.download .u--heading1 {
+    text-transform: uppercase;
+    font-size: 3.2rem;
+    align-self: center;
+    font-family: PoppinsL, Arial, Helvetica, sans-serif;
+    padding: 1rem 2rem;
+    color: #040404;
+    border-radius: 0.5rem;
+}
+.active-tab {
+    display: flex;
+}

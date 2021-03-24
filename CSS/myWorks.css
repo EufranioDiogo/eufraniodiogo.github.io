@@ -37,7 +37,6 @@ header {
     font-size: 32px;
     font-family: PoppinsSB, Arial, Helvetica, sans-serif;
     margin: 15px 0;
-    text-transform: capitalize;
 }
 .u--heading2 {
     color: var(--main-content-h2);
