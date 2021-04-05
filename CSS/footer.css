@@ -37,3 +37,11 @@ footer::after {
     border-color:  #0a97e3 #0a97e3 transparent  transparent;
     right: 0;
 }
+@media screen and (max-width: 768px) {
+    footer {
+        flex-direction: column;
+    }
+    footer .u--heading1 {
+        text-align: center;
+    }
+}

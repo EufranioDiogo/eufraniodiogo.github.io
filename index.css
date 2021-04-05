@@ -2,6 +2,21 @@
     content: attr(hi);
     position: absolute;
 }
+.load-more {
+    display: none;
+    border: none;
+    padding: 1.5rem 2rem;
+    font-size: 1.6rem;
+    background-color: #0a97e3;
+    font-weight: bolder;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
 
 .preloader-main-container {
     position: fixed;
@@ -410,5 +425,95 @@
     .i-work-with li .level-conteiner:hover {
         transform: none;
         width: auto;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    #main-content {
+        width: 95%;
+    }
+    #my-repos {
+        width: 95%;
+    }
+    .div-repos-quantity {
+        flex-wrap: nowrap;
+        margin-top: -45px;
+        left: 5%;
+        right: auto;
+        width: 100%;
+    }
+    .div-repos-quantity .label-info-repo {
+        width: 50%;
+        line-height: 40px;
+        text-align: right;
+    }
+    .div-repos-quantity p {
+        width: 30%;
+        text-align: left;
+        padding-left: 20px;
+    }
+    header {
+        background-position-x: 0px;
+        background-size: 100% 100%;
+    }
+    #main-content #user-description {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #main-content #user-description img {
+        margin-bottom: 40px;
+    }
+    #main-content #user-description .user-info {
+        width: 100%;
+        text-align: center;
+    }
+    .i-work-with li .level-conteiner {
+        width: 90%;
+        margin-left: 5%;
+    }
+    .i-work-with li .level-conteiner:hover {
+        transform: none;
+        width: auto;
+    }
+    .project-container {
+        width: 100%;
+        height: 50rem;
+    }
+    .project-description::after {
+        display: none;
+    }
+    .u--heading1 {
+        margin-bottom: 0.5rem;
+    }
+    .project-description {
+        flex-direction: column-reverse;
+    }
+    .project-main-details {
+        position: relative;
+        width: 95%;
+        left: 2.5%;
+    }
+    .project-description > a {
+        position: relative;
+        height: 25rem;
+        width: 100%;
+    }
+    .project-description .project-img {
+        width: 95%;
+        height: 100% !important;
+        top: 2.5%;
+        right: 2.5%;
+    }
+    .project-number {
+        display: none;
+    }
+    .project-main-details .btn-visit-site {
+        width: 100%;
+        margin-top: 1rem;
+        box-sizing: content-box;
+        top: -4%;
+    }
+    .project-main-details .btn-visit-site::after {
+        width: 90%;
     }
 }

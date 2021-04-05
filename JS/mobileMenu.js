@@ -6,8 +6,16 @@ hamburgerMenu.addEventListener('click', () => {
     if(flagMobileMenuVisible == false){
         flagMobileMenuVisible = true;
         mobileMenu.style.display = 'block';
+        mobileMenu.style.opacity = '1';
+        setTimeout(() => {
+            mobileMenu.style.width = "100%";
+        }, 300);
     } else {
         flagMobileMenuVisible = false;
-        mobileMenu.style.display = 'none';
+        mobileMenu.style.width = '0%';
+        setTimeout(() => {
+            mobileMenu.style.display = 'none';
+        }, 500)
+        
     }
 })

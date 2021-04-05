@@ -166,3 +166,18 @@ window.onscroll = (e) => {
         }
     }
 }
+
+if (window.screen.width < 768) {
+    document.querySelector('.load-more').style.display = 'block';
+    document.querySelector('.load-more').addEventListener('click', ()=> {
+        if ((projectsShowed < projects.length)) {
+            if (projectsFlag && projects.length > 0) {
+                showMoreProjects();
+                projectsFlag = false;
+                setTimeout(() => {
+                    projectsFlag = true;
+                }, 1000);
+            }
+        }
+    })
+}

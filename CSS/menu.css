@@ -7,7 +7,7 @@ body {
     background-color: var(--body);
 }
 
-@media only screen and (max-width: 5000px) {
+
     header {
         position: relative;
         width: 100%;
@@ -111,14 +111,16 @@ body {
         cursor: pointer;
         border-radius: 0.5rem;
     }
-}
 
-@media only screen and (max-width: 75rem) {
+@media only screen and (max-width: 768px) {
     header{
         height: 65vh;
     }
     #computer-menu{
         display: none;
+    }
+    #home-page-title {
+        font-size: 4.5rem;
     }
     #nav-computer-menu{
         height: 60px;
@@ -131,20 +133,24 @@ body {
         right: 0;
         list-style: none;
         text-align: center;
-        background-color: #f5f5f5;
+        background-color: #ffffff;
         border-radius: 0 0 5px 5px;
+        transition: 0.5s;
     }
     #mobile-menu a{
         text-decoration: none;
         color: #1f1f1f;
+        padding: 1rem 0;
+        font-size: 1.6rem;
     }
     #mobile-menu a[href="#"] li{
-        background-color: #1f1f1f !important;
+        background-color: #0a97e3 !important;
         color: #fff;
     }
     #mobile-menu a li{
         margin: 10px 0;
         font-family: PoppinsL, Arial, Helvetica, sans-serif;
+        padding: 1rem 0;
     }
     #social-media-contact{
         left: 0;
