@@ -2,10 +2,12 @@ let preloader = document.querySelector('.preloader-main-container');
 preloader.style.display = 'none';
 
 function getProjectsDatas() {
-    fetch('projects.json').then(response => response.json()).then((data) => {
+    fetch('projects.json')
+    .then(response => response.json())
+    .then((data) => {
         projects = data;
         showMoreProjects();
-    })
+    });
 }
 
 function showMoreProjects() {
