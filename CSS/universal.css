@@ -1,26 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Bricolage Grotesque', Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: #f5f5f5;
 }
 body * {
     transition: 0.3s;
 }
 html {
     font-size: 62.5%;
-}
-@font-face{
-    font-family: RobotoL;
-    src: url('../FONTS/Roboto/Roboto-Light.ttf');
-}
-@font-face{
-    font-family: PoppinsL;
-    src: url('../FONTS/Poppins/Poppins-Light.ttf')
-}
-@font-face{
-    font-family: PoppinsEL;
-    src: url('../FONTS/Poppins/Poppins-ExtraLight.ttf')
-}
-@font-face{
-    font-family: PoppinsSB;
-    src: url('../FONTS/Poppins/Poppins-SemiBold.ttf')
 }

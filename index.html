@@ -1,110 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <link rel="stylesheet" href="CSS/universal.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&display=swap"
+      rel="stylesheet"
+    />
 
+    <style>
+      #emoji {
+        font-size: 6.4rem;
+      }
+      .main-title {
+        font-size: 3.2rem;
+        font-weight: bold;
+      }
+      .explanation-text {
+        font-size: 2.2rem;
+        color: #000000ad;
+        margin: 0.5rem 0;
+        text-align: center;
+      }
 
-    <link class="page-theme" rel="stylesheet" href="CSS/menu-white-theme.css">
-    <link class="page-theme" rel="stylesheet" href="CSS/index-white-theme.css">
-    <link class="page-theme" rel="stylesheet" href="CSS/footer-white-theme.css">
+      .main-container {
+        width: 100vw;
+        height: 95vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
-    <link rel="stylesheet" href="CSS/universal.css">
-    <link rel="stylesheet" href="CSS/menu.css">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="CSS/footer.css">
+      .main-container--text-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 45%;
+      }
+
+      .notify-container {
+        margin-top: 4.5rem;
+        display: flex;
+        flex-direction: column;
+      }
+      .notify-container__title {
+        margin: 0 0 0.5rem 0;
+        font-size: 1.4rem;
+      }
+      .notify-container--action-controller-container {
+          display: flex;
+          align-items: center;
+      }
+      .email-input {
+        display: block;
+        padding: 1rem 0.5rem;
+        border: 1px solid #0002;
+        flex: 5;
+        border-radius: 0.5rem;
+      }
+      .submit-button {
+          display: flex;
+          width: 32px;
+          height: 32px;
+          align-items: center;
+          justify-content: center;
+          margin-left: 1rem;
+          cursor: pointer;
+          flex: 1;
+          border: none;
+          background-color: transparent;
+      }
+
+      footer {
+          width: 100vw;
+          height: 5vh;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          font-size: 1.5rem;
+      }
+      @media only screen and (max-width: 765px) {
+        .main-container--text-container {
+          width: 80%;
+        }
+      }
+    </style>
 
     <script src="https://kit.fontawesome.com/5c7edfd842.js" crossorigin="anonymous"></script>
-    <title>Eufránio Diogo / Home</title>
-</head>
+    <title>Eufránio Diogo | Home</title>
+  </head>
 
-<body>
-    <div class="preloader-main-container">
+  <body>
+    <div class="main-container">
+      <div class="main-container--text-container">
+        <span id="emoji">&#128119;</span>
+        <h1 class="main-title">Em actualização!</h1>
+        <span class="explanation-text"
+          >Sinto muito por qual quer constrangimento causado, trabalhando
+          arduamente para entregar um novo portfolio.</span
+        >
+        <div class="notify-container">
+          <form method="post">
+            <h4 class="notify-container__title">
+              Gostaria de ser notificado quando estiver pronto?
+            </h4>
+            <div class="notify-container--action-controller-container">
+              <input
+                class="email-input"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="exemplo@gmail.com"
+              />
+              <button class="submit-button" type="submit"></button>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
-    <header>
-        <nav id="nav-computer-menu">
-            <h1 id="secret-profile">eufránio</h1>
-            <ul id="computer-menu">
-                <a href="#">
-                    <li class="menu-itens">Trabalhos</li>
-                    <span></span>
-                </a>
-                <a href="HTML/services.html">
-                    <li class="menu-itens">Serviços</li>
-                    <span></span>
-                </a>
-                <a href="HTML/about-me.html">
-                    <li class="menu-itens">Sobre-Me</li>
-                    <span></span>
-                </a>
-            </ul>
-
-            <button id="btn-menu-extra">
-                <i class="fas fa-bars"></i>
-            </button>
-            <ul id="mobile-menu">
-
-                <a href="#">
-                    <li class="menu-itens">Trabalhos</li>
-                    <span></span>
-                </a>
-                <a href="HTML/services.html">
-                    <li class="menu-itens">Serviços</li>
-                    <span></span>
-                </a>
-                <a href="HTML/about-me.html">
-                    <li class="menu-itens">Sobre-Me</li>
-                    <span></span>
-                </a>
-            </ul>
-
-        </nav>
-        <div class="filter"></div>
-        <h1 id="home-page-title" hi="&#128075;">Bem vindo<br>ao meu<br><strong style="font-family: PoppinsSB;">Portfolio</strong></h1>
-    </header>
-
-    <div id="main-content">
-
-        <h1 class="u--heading1">Meus Trabalhos</h1>
-
-        <div class="row projects-container">
-            <div class="sub-row">
-            </div>
-        </div>
-
-        <div class="preloader-waiting-projects-container">
-            <div class="preloader">
-                
-            </div>
-        </div>
-
-        <button class="load-more">
-            Mais Projectos
-        </button>
-        <footer>
-            <div class="social-medias-container">
-                <a href="http://">
-                    <i class="fab fa-github-square"></i>
-                </a>
-                <a href="http://">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="http://">
-                    <i class="fab fa-facebook-square"></i>
-                </a>
-            </div>
-
-            <h1 class="u--heading1">Thanks to be right</h1>
-
-            <p class="u--paragraph">Eufránio Diogo Portfolio</p>
-        </footer>
-        <!--{{ repo.icon }}-->
-
-        <script src="index.js"></script>
-        <script src="JS/menu.js"></script>
-        <script src="JS/mobileMenu.js"></script>
-</body>
-
+    <footer>
+        <span>Developed by <a href="https://github.com/EufranioDiogo">Eufránio Diogo</a></span>
+    </footer>
+  </body>
 </html>
