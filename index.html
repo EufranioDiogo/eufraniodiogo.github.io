@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/assets/icons/favicon_io/site.webmanifest">
+
+
     <link rel="stylesheet" href="CSS/universal.css" />
     <link rel="stylesheet" href="index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -53,8 +59,8 @@
         font-size: 1.4rem;
       }
       .notify-container--action-controller-container {
-          display: flex;
-          align-items: center;
+        display: flex;
+        align-items: center;
       }
       .email-input {
         display: block;
@@ -64,25 +70,25 @@
         border-radius: 0.5rem;
       }
       .submit-button {
-          display: flex;
-          width: 32px;
-          height: 32px;
-          align-items: center;
-          justify-content: center;
-          margin-left: 1rem;
-          cursor: pointer;
-          flex: 1;
-          border: none;
-          background-color: transparent;
+        display: flex;
+        width: 32px;
+        height: 32px;
+        align-items: center;
+        justify-content: center;
+        margin-left: 1rem;
+        cursor: pointer;
+        flex: 1;
+        border: none;
+        background-color: transparent;
       }
 
       footer {
-          width: 100vw;
-          height: 5vh;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          font-size: 1.5rem;
+        width: 100vw;
+        height: 5vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.5rem;
       }
       @media only screen and (max-width: 765px) {
         .main-container--text-container {
@@ -91,7 +97,10 @@
       }
     </style>
 
-    <script src="https://kit.fontawesome.com/5c7edfd842.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/5c7edfd842.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Eufránio Diogo | Home</title>
   </head>
 
@@ -117,14 +126,19 @@
                 id="email"
                 placeholder="exemplo@gmail.com"
               />
-              <button class="submit-button" type="submit"></button>
+              <button class="submit-button" type="submit">
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
             </div>
           </form>
         </div>
       </div>
     </div>
     <footer>
-        <span>Developed by <a href="https://github.com/EufranioDiogo">Eufránio Diogo</a></span>
+      <span
+        >Developed by
+        <a href="https://github.com/EufranioDiogo">Eufránio Diogo</a></span
+      >
     </footer>
   </body>
 </html>
